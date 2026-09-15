@@ -20,12 +20,17 @@ async function main() {
   if (!mongodbUri) throw new Error("MONGODB_URI is missing in .env.local");
 
   const credentials = JSON.parse(await readFile(credentialsPath, "utf8"));
-  const email = String(credentials.email || "").trim().toLowerCase();
+  const email = String(credentials.email || "")
+    .trim()
+    .toLowerCase();
   const password = String(credentials.password || "");
 
-  if (!email || !email.includes("@")) throw new Error("Enter a valid email in admin-credentials.json");
+  if (!email || !email.includes("@"))
+    throw new Error("Enter a valid email in admin-credentials.json");
   if (password.length < 12 || password.includes("CHANGE_THIS")) {
-    throw new Error("Use a unique password of at least 12 characters in admin-credentials.json");
+    throw new Error(
+      "Use a unique password of at least 12 characters in admin-credentials.json",
+    );
   }
 
   const { passwordHash, passwordSalt } = await hashPassword(password);

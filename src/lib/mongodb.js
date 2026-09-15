@@ -11,7 +11,8 @@ if (!cached) {
 
 export default async function connectDB() {
   const MONGODB_URI = process.env.MONGODB_URI;
-  if (!MONGODB_URI) throw new Error("Please define MONGODB_URI in your environment variables");
+  if (!MONGODB_URI)
+    throw new Error("Please define MONGODB_URI in your environment variables");
   if (cached.conn) {
     return cached.conn;
   }

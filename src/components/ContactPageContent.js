@@ -19,7 +19,11 @@ export default function ContactPageContent() {
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState({ loading: false, message: "", type: "" });
+  const [status, setStatus] = useState({
+    loading: false,
+    message: "",
+    type: "",
+  });
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,12 +33,32 @@ export default function ContactPageContent() {
     e.preventDefault();
     setStatus({ loading: true, message: "", type: "" });
     try {
-      const response = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(formData) });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
       const result = await response.json();
-      setStatus({ loading: false, message: result.message, type: result.success ? "success" : "error" });
-      if (result.success) setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      setStatus({
+        loading: false,
+        message: result.message,
+        type: result.success ? "success" : "error",
+      });
+      if (result.success)
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
     } catch {
-      setStatus({ loading: false, message: "Your request could not be submitted. Please check your connection and try again.", type: "error" });
+      setStatus({
+        loading: false,
+        message:
+          "Your request could not be submitted. Please check your connection and try again.",
+        type: "error",
+      });
     }
   };
 
@@ -238,13 +262,21 @@ export default function ContactPageContent() {
                 disabled={status.loading}
                 className="w-full bg-slate-900 hover:bg-amber-500 text-white hover:text-slate-950 font-bold py-3 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow"
               >
-                <span>{status.loading ? "Submitting…" : "Submit Consultation Request"}</span> <FaPaperPlane size={12} />
+                <span>
+                  {status.loading
+                    ? "Submitting…"
+                    : "Submit Consultation Request"}
+                </span>{" "}
+                <FaPaperPlane size={12} />
               </button>
             </form>
           </div>
         </div>
       </div>
-      <SubmissionPopup status={status} onClose={() => setStatus({ loading: false, message: "", type: "" })} />
+      <SubmissionPopup
+        status={status}
+        onClose={() => setStatus({ loading: false, message: "", type: "" })}
+      />
     </section>
   );
 }

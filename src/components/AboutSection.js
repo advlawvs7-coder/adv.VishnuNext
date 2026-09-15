@@ -45,10 +45,10 @@ export default function AboutSection() {
               Advocate Dr. Vishnu Sharma has served the legal fraternity since
               2009 and brings 17+ years of courtroom experience in civil and
               criminal litigation. A former Co-Chairman and Honorary Secretary
-              of the Bar Council of Delhi, he now leads <strong>LAWVS Legal
-              India Pvt Ltd</strong> as Managing Director while continuing his
-              work for advocate welfare, professional education and ethical
-              legal practice.
+              of the Bar Council of Delhi, he now leads{" "}
+              <strong>LAWVS Legal India Pvt Ltd</strong> as Managing Director
+              while continuing his work for advocate welfare, professional
+              education and ethical legal practice.
             </p>
 
             {/* Core Pillars Grid inside About */}

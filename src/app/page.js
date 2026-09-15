@@ -39,7 +39,8 @@ export default async function Home() {
       {/* 4. Optional Bottom Section (Pattern continued) */}
       <div className="premium-texture-bg py-12 text-center border-t border-slate-200/40">
         <p className="text-xs text-slate-400 tracking-widest uppercase font-medium">
-          Advocate Dr. Vishnu Sharma • Litigation • Leadership • Legal Excellence
+          Advocate Dr. Vishnu Sharma • Litigation • Leadership • Legal
+          Excellence
         </p>
       </div>
     </div>

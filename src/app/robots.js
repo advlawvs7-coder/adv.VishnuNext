@@ -1,1 +1,6 @@
-export default function robots(){return {rules:{userAgent:"*",allow:"/",disallow:["/admin/","/api/"]},sitemap:"https://advocatevishnu.com/sitemap.xml"}}
+export default function robots() {
+  return {
+    rules: { userAgent: "*", allow: "/", disallow: ["/admin/", "/api/"] },
+    sitemap: "https://advocatevishnu.com/sitemap.xml",
+  };
+}

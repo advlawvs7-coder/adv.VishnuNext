@@ -21,8 +21,32 @@ const modules = {
   ],
 };
 
-const formats = ["header", "bold", "italic", "underline", "strike", "color", "background", "list", "align", "blockquote", "code-block", "link"];
+const formats = [
+  "header",
+  "bold",
+  "italic",
+  "underline",
+  "strike",
+  "color",
+  "background",
+  "list",
+  "align",
+  "blockquote",
+  "code-block",
+  "link",
+];
 
 export default function RichTextEditor({ value, onChange }) {
-  return <div className="blog-editor overflow-visible rounded-xl border border-slate-300 bg-white"><ReactQuill theme="snow" value={value} onChange={onChange} modules={modules} formats={formats} placeholder="Write the complete article here…" /></div>;
+  return (
+    <div className="blog-editor overflow-visible rounded-xl border border-slate-300 bg-white">
+      <ReactQuill
+        theme="snow"
+        value={value}
+        onChange={onChange}
+        modules={modules}
+        formats={formats}
+        placeholder="Write the complete article here…"
+      />
+    </div>
+  );
 }

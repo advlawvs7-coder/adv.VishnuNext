@@ -41,10 +41,22 @@ const achievements = [
 ];
 
 const principles = [
-  ["Integrity", "Transparent, ethical and responsible representation in every matter."],
-  ["Client-Centric Advocacy", "Clear strategy shaped around each client’s rights, facts and legal objectives."],
-  ["Professional Excellence", "Careful preparation backed by deep courtroom and dispute-resolution experience."],
-  ["Advocate Empowerment", "Mentorship and institutional support for the next generation of legal professionals."],
+  [
+    "Integrity",
+    "Transparent, ethical and responsible representation in every matter.",
+  ],
+  [
+    "Client-Centric Advocacy",
+    "Clear strategy shaped around each client’s rights, facts and legal objectives.",
+  ],
+  [
+    "Professional Excellence",
+    "Careful preparation backed by deep courtroom and dispute-resolution experience.",
+  ],
+  [
+    "Advocate Empowerment",
+    "Mentorship and institutional support for the next generation of legal professionals.",
+  ],
 ];
 
 export default function HomeProfileSections() {
@@ -60,8 +72,8 @@ export default function HomeProfileSections() {
               Legal Experience, Leadership & Public Service
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              A career spanning courtroom advocacy, Bar leadership, corporate legal services,
-              professional mentorship and community wellness.
+              A career spanning courtroom advocacy, Bar leadership, corporate
+              legal services, professional mentorship and community wellness.
             </p>
           </div>
 
@@ -92,15 +104,23 @@ export default function HomeProfileSections() {
               Strategic Advocacy Grounded in Trust
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-600">
-              Advocate Vishnu Sharma combines legal strategy with professional ethics,
-              responsive communication and a long-term commitment to the legal fraternity.
+              Advocate Vishnu Sharma combines legal strategy with professional
+              ethics, responsive communication and a long-term commitment to the
+              legal fraternity.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {principles.map(([title, text], index) => (
-              <div key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <span className="text-sm font-black text-amber-600">0{index + 1}</span>
-                <h3 className="mt-3 text-lg font-bold text-slate-900">{title}</h3>
+              <div
+                key={title}
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <span className="text-sm font-black text-amber-600">
+                  0{index + 1}
+                </span>
+                <h3 className="mt-3 text-lg font-bold text-slate-900">
+                  {title}
+                </h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
               </div>
             ))}

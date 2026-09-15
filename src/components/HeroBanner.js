@@ -27,7 +27,8 @@ export default function HeroBanner() {
       ctaLink: "/#practice-areas",
     },
     {
-      image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1920",
+      image:
+        "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1920",
       title: "LAWVS Legal India",
       subtitle: "Managing Director • LAWVS Legal India Pvt Ltd",
       description:

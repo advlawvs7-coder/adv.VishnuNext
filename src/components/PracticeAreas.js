@@ -32,7 +32,10 @@ export default function PracticeAreas() {
   ];
 
   return (
-    <section id="practice-areas" className="premium-texture-bg w-full py-20 px-4 sm:px-6 lg:px-8">
+    <section
+      id="practice-areas"
+      className="premium-texture-bg w-full py-20 px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-500/10 px-3 py-1 rounded-md">

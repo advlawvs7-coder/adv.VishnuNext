@@ -1,3 +1,49 @@
 "use client";
-import Link from "next/link"; import {usePathname} from "next/navigation"; import {logoutAdmin} from "@/actions/authActions";
-export default function AdminFrame({children}){const pathname=usePathname();if(pathname==="/admin/login")return children;return <div className="min-h-screen bg-slate-100 pt-24"><div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-[230px_1fr] gap-6 pb-12"><aside className="bg-slate-900 text-white rounded-2xl p-5 h-fit lg:sticky lg:top-24"><p className="text-amber-400 font-black">ADMIN DESK</p><nav className="mt-6 space-y-2 text-sm"><Link className="block p-3 rounded-lg hover:bg-white/10" href="/admin">Dashboard</Link><Link className="block p-3 rounded-lg hover:bg-white/10" href="/admin/blogs">Manage Blogs</Link><Link className="block p-3 rounded-lg hover:bg-white/10" href="/admin/blogs/new">Add Blog</Link><Link className="block p-3 rounded-lg hover:bg-white/10" href="/admin/contacts">Enquiries</Link></nav><form action={logoutAdmin} className="mt-6"><button className="w-full border border-slate-700 rounded-lg p-3 text-sm hover:border-amber-400">Logout</button></form></aside><section>{children}</section></div></div>}
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { logoutAdmin } from "@/actions/authActions";
+export default function AdminFrame({ children }) {
+  const pathname = usePathname();
+  if (pathname === "/admin/login") return children;
+  return (
+    <div className="min-h-screen bg-slate-100 pt-24">
+      <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-[230px_1fr] gap-6 pb-12">
+        <aside className="bg-slate-900 text-white rounded-2xl p-5 h-fit lg:sticky lg:top-24">
+          <p className="text-amber-400 font-black">ADMIN DESK</p>
+          <nav className="mt-6 space-y-2 text-sm">
+            <Link
+              className="block p-3 rounded-lg hover:bg-white/10"
+              href="/admin"
+            >
+              Dashboard
+            </Link>
+            <Link
+              className="block p-3 rounded-lg hover:bg-white/10"
+              href="/admin/blogs"
+            >
+              Manage Blogs
+            </Link>
+            <Link
+              className="block p-3 rounded-lg hover:bg-white/10"
+              href="/admin/blogs/new"
+            >
+              Add Blog
+            </Link>
+            <Link
+              className="block p-3 rounded-lg hover:bg-white/10"
+              href="/admin/contacts"
+            >
+              Enquiries
+            </Link>
+          </nav>
+          <form action={logoutAdmin} className="mt-6">
+            <button className="w-full border border-slate-700 rounded-lg p-3 text-sm hover:border-amber-400">
+              Logout
+            </button>
+          </form>
+        </aside>
+        <section>{children}</section>
+      </div>
+    </div>
+  );
+}

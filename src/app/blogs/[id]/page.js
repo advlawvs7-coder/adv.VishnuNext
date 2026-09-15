@@ -1,4 +1,88 @@
-import Link from "next/link"; import {notFound,redirect} from "next/navigation"; import {getBlogBySlug,getBlogs} from "@/actions/blogActions";
-export const dynamic="force-dynamic";
-export async function generateMetadata({params}){const {id}=await params;const {data}=await getBlogBySlug(id);if(!data)return {};return {title:data.metaTitle||data.title,description:data.description,keywords:data.metaKeywords,openGraph:{title:data.metaTitle||data.title,description:data.description,images:data.image?[data.image]:[]}}}
-export default async function BlogPage({params}){const {id}=await params;const [{data:post},{data:all=[]}]=await Promise.all([getBlogBySlug(id),getBlogs()]);if(!post)notFound();if(decodeURIComponent(id).toLowerCase()!==post.slug)redirect(`/blogs/${post.slug}`);const latest=all.filter(x=>x.slug!==post.slug).slice(0,5);return <main className="min-h-screen premium-texture-bg bg-slate-50 pt-28 pb-20"><div className="max-w-7xl mx-auto px-4"><Link href="/blogs" className="text-sm font-bold text-amber-700">← All Blogs</Link><div className="grid lg:grid-cols-12 gap-8 mt-6"><article className="lg:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10"><p className="text-xs text-amber-700 font-black uppercase tracking-widest">{post.category}</p><h1 className="text-3xl sm:text-4xl font-black text-slate-900 mt-3 leading-tight">{post.title}</h1><p className="text-sm text-slate-500 mt-4">By {post.author} • {new Date(post.publishedAt||post.createdAt).toLocaleDateString("en-IN")}</p>{post.image&&<img src={post.image} alt={post.title} className="w-full max-h-[440px] object-cover rounded-xl mt-7"/>}<p className="mt-7 text-lg text-slate-600 border-l-4 border-amber-500 pl-5">{post.description}</p><div className="prose-content mt-8 text-slate-700 leading-8" dangerouslySetInnerHTML={{__html:post.content}}/></article><aside className="lg:col-span-4 bg-white rounded-2xl border border-slate-200 p-6 h-fit lg:sticky lg:top-24"><h2 className="font-black text-xl">Latest Articles</h2><div className="mt-4 divide-y">{latest.map(item=><Link key={item._id} href={`/blogs/${item.slug}`} className="block py-4"><p className="text-xs text-amber-700 font-bold">{item.category}</p><p className="font-bold mt-1">{item.title}</p></Link>)}</div></aside></div></div></main>}
+import Link from "next/link";
+import { notFound, redirect } from "next/navigation";
+import { getBlogBySlug, getBlogs } from "@/actions/blogActions";
+export const dynamic = "force-dynamic";
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const { data } = await getBlogBySlug(id);
+  if (!data) return {};
+  return {
+    title: data.metaTitle || data.title,
+    description: data.description,
+    keywords: data.metaKeywords,
+    openGraph: {
+      title: data.metaTitle || data.title,
+      description: data.description,
+      images: data.image ? [data.image] : [],
+    },
+  };
+}
+export default async function BlogPage({ params }) {
+  const { id } = await params;
+  const [{ data: post }, { data: all = [] }] = await Promise.all([
+    getBlogBySlug(id),
+    getBlogs(),
+  ]);
+  if (!post) notFound();
+  if (decodeURIComponent(id).toLowerCase() !== post.slug)
+    redirect(`/blogs/${post.slug}`);
+  const latest = all.filter((x) => x.slug !== post.slug).slice(0, 5);
+  return (
+    <main className="min-h-screen premium-texture-bg bg-slate-50 pt-28 pb-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <Link href="/blogs" className="text-sm font-bold text-amber-700">
+          ← All Blogs
+        </Link>
+        <div className="grid lg:grid-cols-12 gap-8 mt-6">
+          <article className="lg:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10">
+            <p className="text-xs text-amber-700 font-black uppercase tracking-widest">
+              {post.category}
+            </p>
+            <h1 className="text-3xl sm:text-4xl font-black text-slate-900 mt-3 leading-tight">
+              {post.title}
+            </h1>
+            <p className="text-sm text-slate-500 mt-4">
+              By {post.author} •{" "}
+              {new Date(post.publishedAt || post.createdAt).toLocaleDateString(
+                "en-IN",
+              )}
+            </p>
+            {post.image && (
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full max-h-[440px] object-cover rounded-xl mt-7"
+              />
+            )}
+            <p className="mt-7 text-lg text-slate-600 border-l-4 border-amber-500 pl-5">
+              {post.description}
+            </p>
+            <div
+              className="prose-content mt-8 text-slate-700 leading-8"
+              dangerouslySetInnerHTML={{
+                __html: sanitizeHtml(post.content),
+              }}
+            />
+          </article>
+          <aside className="lg:col-span-4 bg-white rounded-2xl border border-slate-200 p-6 h-fit lg:sticky lg:top-24">
+            <h2 className="font-black text-xl">Latest Articles</h2>
+            <div className="mt-4 divide-y">
+              {latest.map((item) => (
+                <Link
+                  key={item._id}
+                  href={`/blogs/${item.slug}`}
+                  className="block py-4"
+                >
+                  <p className="text-xs text-amber-700 font-bold">
+                    {item.category}
+                  </p>
+                  <p className="font-bold mt-1">{item.title}</p>
+                </Link>
+              ))}
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  );
+}

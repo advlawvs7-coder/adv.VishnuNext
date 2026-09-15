@@ -4,7 +4,10 @@ import { cookies } from "next/headers";
 export const SESSION_COOKIE = "advocate_admin_session";
 
 function signature(secret) {
-  return crypto.createHmac("sha256", secret).update("advocate-vishnu-admin").digest("hex");
+  return crypto
+    .createHmac("sha256", secret)
+    .update("advocate-vishnu-admin")
+    .digest("hex");
 }
 
 export async function isAdmin() {
@@ -36,4 +39,3 @@ export async function destroyAdminSession() {
 export async function requireAdmin() {
   if (!(await isAdmin())) throw new Error("Unauthorized");
 }
-

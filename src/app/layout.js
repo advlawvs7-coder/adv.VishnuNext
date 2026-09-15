@@ -5,7 +5,10 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   metadataBase: new URL("https://advocatevishnu.com"),
-  title: { default: "Advocate Dr. Vishnu Sharma | Senior Legal Practitioner", template: "%s | Advocate Vishnu Sharma" },
+  title: {
+    default: "Advocate Dr. Vishnu Sharma | Senior Legal Practitioner",
+    template: "%s | Advocate Vishnu Sharma",
+  },
   description:
     "Official website of Advocate Dr. Vishnu Sharma, offering experienced civil, criminal, matrimonial and corporate legal representation in Delhi.",
   alternates: { canonical: "/" },

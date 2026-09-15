@@ -1,17 +1,16 @@
 // components/HomeContactBlogs.js
 "use client";
-import {
-  FaEnvelope,
-  FaPhoneAlt,
-  FaUser,
-  FaPaperPlane,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaUser, FaPaperPlane } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import SubmissionPopup from "@/components/SubmissionPopup";
 
 export default function HomeContactBlogs({ blogs = [] }) {
-  const [status,setStatus]=useState({loading:false,message:"",type:""});
+  const [status, setStatus] = useState({
+    loading: false,
+    message: "",
+    type: "",
+  });
   const fallbackBlogs = [
     {
       title: "Understanding Young Advocate Welfare Schemes in Delhi",
@@ -31,18 +30,40 @@ export default function HomeContactBlogs({ blogs = [] }) {
     },
   ];
 
-  const recentBlogs = blogs.length ? blogs.map(blog=>({title:blog.title,date:new Date(blog.publishedAt||blog.createdAt).toLocaleDateString("en-IN"),readTime:blog.category,excerpt:blog.description,slug:blog.slug})) : fallbackBlogs;
+  const recentBlogs = blogs.length
+    ? blogs.map((blog) => ({
+        title: blog.title,
+        date: new Date(blog.publishedAt || blog.createdAt).toLocaleDateString(
+          "en-IN",
+        ),
+        readTime: blog.category,
+        excerpt: blog.description,
+        slug: blog.slug,
+      }))
+    : fallbackBlogs;
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
-    setStatus({loading:true,message:"",type:""});
+    setStatus({ loading: true, message: "", type: "" });
     try {
-      const response=await fetch("/api/contact",{method:"POST",body:new FormData(form)});
-      const result=await response.json();
-      setStatus({loading:false,message:result.message,type:result.success?"success":"error"});
-      if(result.success)form.reset();
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: new FormData(form),
+      });
+      const result = await response.json();
+      setStatus({
+        loading: false,
+        message: result.message,
+        type: result.success ? "success" : "error",
+      });
+      if (result.success) form.reset();
     } catch {
-      setStatus({loading:false,message:"Your request could not be submitted. Please check your connection and try again.",type:"error"});
+      setStatus({
+        loading: false,
+        message:
+          "Your request could not be submitted. Please check your connection and try again.",
+        type: "error",
+      });
     }
   };
 
@@ -54,7 +75,10 @@ export default function HomeContactBlogs({ blogs = [] }) {
           {/* LEFT SIDE: LATEST INSIGHTS (5 Columns) */}
           <div className="lg:col-span-5 space-y-6 text-left">
             <div className="space-y-2">
-              <Link href="/knowledge-hub" className="text-xs font-bold uppercase tracking-widest text-amber-600 hover:text-amber-800">
+              <Link
+                href="/knowledge-hub"
+                className="text-xs font-bold uppercase tracking-widest text-amber-600 hover:text-amber-800"
+              >
                 Knowledge Hub
               </Link>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
@@ -83,7 +107,10 @@ export default function HomeContactBlogs({ blogs = [] }) {
                 </Link>
               ))}
             </div>
-            <Link href="/knowledge-hub" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-amber-700">
+            <Link
+              href="/knowledge-hub"
+              className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-amber-700"
+            >
               Explore the Knowledge Hub <span aria-hidden="true">→</span>
             </Link>
           </div>
@@ -183,13 +210,19 @@ export default function HomeContactBlogs({ blogs = [] }) {
                 disabled={status.loading}
                 className="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded-lg text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 mt-2 shadow-lg"
               >
-                <span>{status.loading ? "Submitting…" : "Request Consultation"}</span> <FaPaperPlane size={12} />
+                <span>
+                  {status.loading ? "Submitting…" : "Request Consultation"}
+                </span>{" "}
+                <FaPaperPlane size={12} />
               </button>
             </form>
           </div>
         </div>
       </div>
-      <SubmissionPopup status={status} onClose={()=>setStatus({loading:false,message:"",type:""})} />
+      <SubmissionPopup
+        status={status}
+        onClose={() => setStatus({ loading: false, message: "", type: "" })}
+      />
     </section>
   );
 }

@@ -24,7 +24,8 @@ export async function submitContact(data) {
 
     return {
       success: false,
-      message: "Your request could not be submitted. Please try again or call +91 8171974067.",
+      message:
+        "Your request could not be submitted. Please try again or call +91 8171974067.",
     };
   }
 }
