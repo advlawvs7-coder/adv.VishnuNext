@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     // Global dynamic textured wrapper layout
-    <div className="w-full min-h-screen premium-texture-bg pt-28 pb-12 bg-slate-50">
+    <div className="w-full min-h-screen premium-texture-bg pt-10  pb-12 bg-slate-50">
       {/* Dynamic Header Block */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left mb-4">
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">

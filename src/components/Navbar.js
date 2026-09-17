@@ -16,6 +16,7 @@ import { HiOutlineArrowRight, HiOutlineMenuAlt3 } from "react-icons/hi";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Me", href: "/about" },
+  { label: "Contact", href: "/contact" },
   { label: "Blogs", href: "/blogs" },
   { label: "Gallery", href: "/gallery" },
 ];

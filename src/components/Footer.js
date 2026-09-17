@@ -135,17 +135,17 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://icsaj.com/"
+                href="https://debtrecoverservices.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between bg-slate-800/50 hover:bg-slate-800 border border-slate-700/40 px-4 py-2.5 rounded-lg transition-all duration-300 transform hover:scale-[1.02]"
               >
                 <div className="flex flex-col">
                   <span className="text-xs text-slate-400 group-hover:text-blue-400 transition">
-                    Judicial Council
+                    Debt Recovery Services
                   </span>
                   <span className="text-sm font-bold text-white tracking-wide">
-                    ICSAJ.COM
+                    debtrecoverservices.com
                   </span>
                 </div>
                 <span className="text-slate-500 group-hover:text-white transition">

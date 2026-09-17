@@ -8,7 +8,7 @@ export default function HeroBanner() {
   const slides = [
     {
       image:
-        "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1920", // Replace with real photo later
+        "https://res.cloudinary.com/drl3hxc3t/image/upload/v1789539909/1_pci6qr.png", // Replace with real photo later
       title: "Advocate Dr. Vishnu Sharma",
       subtitle: "Enrolled Since 2009 • 17+ Years of Practice",
       description:
@@ -18,7 +18,7 @@ export default function HeroBanner() {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1453945619913-79ec89a82c51?auto=format&fit=crop&q=80&w=1920",
+        "https://res.cloudinary.com/drl3hxc3t/image/upload/v1789539910/3_j3mmcp.png",
       title: "Leadership Built on Service",
       subtitle: "Former Co-Chairman & Hony. Secretary, BCD",
       description:
@@ -28,7 +28,7 @@ export default function HeroBanner() {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1920",
+        "https://res.cloudinary.com/drl3hxc3t/image/upload/v1789539910/2_rkayu5.png",
       title: "LAWVS Legal India",
       subtitle: "Managing Director • LAWVS Legal India Pvt Ltd",
       description:
@@ -92,7 +92,7 @@ export default function HeroBanner() {
 
                 {/* Big Heading with cinematic animation */}
                 <h1
-                  className={`text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight transition-all duration-700 delay-300 ${
+                  className={`text-3xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight transition-all duration-700 delay-300 ${
                     index === current
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-6"

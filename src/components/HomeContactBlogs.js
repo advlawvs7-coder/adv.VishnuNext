@@ -91,7 +91,7 @@ export default function HomeContactBlogs({ blogs = [] }) {
                 <Link
                   key={idx}
                   href={blog.slug ? `/blogs/${blog.slug}` : "/knowledge-hub"}
-                  className="bg-white/80 p-5 rounded-xl border border-slate-200/60 shadow-sm hover:shadow-md transition group"
+                  className=" p-5 hover:shadow-md transition group"
                 >
                   <div className="flex items-center gap-4 text-xs font-semibold text-slate-400 mb-2">
                     <span>{blog.date}</span>

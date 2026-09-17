@@ -11,7 +11,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     // Global continuous texture layer application across internal views
-    <div className="w-full min-h-screen premium-texture-bg pt-28 pb-12 bg-slate-50">
+    <div className="w-full min-h-screen premium-texture-bg pt-10 pb-12 bg-slate-50">
       {/* Route Directory Visual Indicator */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left mb-2">
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { getBlogBySlug, getBlogs } from "@/actions/blogActions";
+import DOMPurify from "isomorphic-dompurify";
 export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }) {
   const { id } = await params;
@@ -28,7 +29,7 @@ export default async function BlogPage({ params }) {
     redirect(`/blogs/${post.slug}`);
   const latest = all.filter((x) => x.slug !== post.slug).slice(0, 5);
   return (
-    <main className="min-h-screen premium-texture-bg bg-slate-50 pt-28 pb-20">
+    <main className="min-h-screen premium-texture-bg bg-slate-50 pt-10 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <Link href="/blogs" className="text-sm font-bold text-amber-700">
           ← All Blogs
@@ -58,9 +59,11 @@ export default async function BlogPage({ params }) {
               {post.description}
             </p>
             <div
-              className="prose-content mt-8 text-slate-700 leading-8"
+              className="prose-content mt-8 text-slate-700 leading-8 text-sm sm:text-base prose prose-slate prose-a:text-amber-700 prose-a:font-semibold prose-a:no-underline prose-a:hover:underline prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:bg-slate-50 prose-blockquote:pl-5 prose-blockquote:py-3 prose-blockquote:rounded-md prose-img:rounded-xl prose-img:max-h-[440px] prose-img:object-cover prose-img:w-full
+             min-w-0 max-w-full overflow-hidden
+              [overflow-wrap:anywhere]"
               dangerouslySetInnerHTML={{
-                __html: sanitizeHtml(post.content),
+                __html: DOMPurify.sanitize(post.content || ""),
               }}
             />
           </article>
