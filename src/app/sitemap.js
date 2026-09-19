@@ -1,6 +1,6 @@
 import { getBlogs } from "@/actions/blogActions";
 export default async function sitemap() {
-  const base = "https://advocatevishnu.com";
+  const base = "https://www.advocatevishnu.com";
   const fixed = [
     "",
     "/about",

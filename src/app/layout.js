@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  metadataBase: new URL("https://advocatevishnu.com"),
+  metadataBase: new URL("https://www.advocatevishnu.com"),
 
   title: {
     default: "Advocate Dr. Vishnu Sharma | Senior Legal Practitioner",
@@ -28,7 +28,7 @@ export const metadata = {
     title: "Advocate Dr. Vishnu Sharma | Senior Legal Practitioner",
     description:
       "Official website of Advocate Dr. Vishnu Sharma, offering experienced civil, criminal, matrimonial and corporate legal representation in Delhi.",
-    url: "https://advocatevishnu.com/",
+    url: "https://www.advocatevishnu.com",
     siteName: "Advocate Dr. Vishnu Sharma",
     type: "website",
     locale: "en_IN",
