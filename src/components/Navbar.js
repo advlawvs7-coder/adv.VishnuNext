@@ -18,7 +18,7 @@ const navLinks = [
   { label: "About Me", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Blogs", href: "/blogs" },
-  { label: "Gallery", href: "/gallery" },
+  // { label: "Gallery", href: "/gallery" },
 ];
 
 const socialLinks = [
