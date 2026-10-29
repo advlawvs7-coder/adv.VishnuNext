@@ -1,0 +1,32 @@
+[
+  {
+    "eyebrow": "LEGAL CONSULTATION • DELHI, INDIA",
+    "title": "Experienced Counsel. Thoughtful Legal Solutions.",
+    "subtitle": "Civil, criminal, matrimonial, property and NRI legal services with a practical, case-focused approach.",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80",
+    "ctaText": "Request Consultation",
+    "ctaHref": "/book-appointment",
+    "order": 1,
+    "enabled": true
+  },
+  {
+    "eyebrow": "DOMESTIC & NRI LEGAL MATTERS",
+    "title": "Legal Guidance, Wherever You Are.",
+    "subtitle": "Discuss Indian legal matters from home or abroad. Online consultation requests can be submitted directly.",
+    "image": "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1300&q=80",
+    "ctaText": "Explore Practice Areas",
+    "ctaHref": "/practice-areas",
+    "order": 2,
+    "enabled": true
+  },
+  {
+    "eyebrow": "ADVOCATE DR. VISHNU SHARMA",
+    "title": "Every Legal Matter Deserves Attention.",
+    "subtitle": "Understand your options, evidence, procedure and next steps through clear legal advice.",
+    "image": "https://images.unsplash.com/photo-1589391886645-d51941baf7fb?auto=format&fit=crop&w=1300&q=80",
+    "ctaText": "About the Practice",
+    "ctaHref": "/about",
+    "order": 3,
+    "enabled": true
+  }
+]

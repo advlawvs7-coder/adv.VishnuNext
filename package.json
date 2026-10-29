@@ -1,0 +1,60 @@
+{
+  "name": "advocate-vishnu-sharma-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node scripts/seed.mjs",
+    "check": "node scripts/check-structure.mjs",
+    "verify:routes": "node scripts/verify-routes.mjs",
+    "seed:refresh": "node scripts/seed.mjs --refresh-demo-content",
+    "verify:links": "node scripts/deep-link-audit.mjs",
+    "verify:content": "node scripts/content-audit.mjs",
+    "check:syntax": "node scripts/check-structure.mjs",
+    "verify:demo": "node scripts/smoke-fixtures.mjs",
+    "verify:ui": "node scripts/verify-ui-contract.mjs",
+    "seed:videos": "node scripts/seed.mjs --sync-video-metadata",
+    "seed:images": "node scripts/seed.mjs --sync-legacy-images",
+    "verify:v5": "node scripts/check-structure.mjs && node scripts/verify-routes.mjs && node scripts/deep-link-audit.mjs && node scripts/content-audit.mjs && node scripts/smoke-fixtures.mjs && node scripts/verify-ui-contract.mjs",
+    "themes:css": "node scripts/generate-themes.mjs",
+    "verify:themes": "node scripts/verify-themes.mjs",
+    "verify:v6": "npm run verify:v5 && npm run verify:themes",
+    "verify:v7": "npm run verify:v6 && node scripts/verify-ai-features.mjs",
+    "verify:v8": "npm run verify:v7 && node scripts/verify-transparent-v8.mjs",
+    "verify:v9": "npm run verify:v8 && node scripts/verify-premium-v9.mjs && npm run verify:security",
+    "verify:security": "node scripts/verify-security-config.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^12.23.12",
+    "jose": "^5.9.6",
+    "lucide-react": "^0.468.0",
+    "marked": "^15.0.12",
+    "mongoose": "^8.9.5",
+    "next": "15.5.28",
+    "quill": "2.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.7.0",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.0",
+    "sanitize-html": "^2.17.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/sanitize-html": "^2.16.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "8.5.31",
+    "tailwindcss": "^3.4.17"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "overrides": {
+    "postcss": "$postcss",
+    "postcss-selector-parser": "6.1.5"
+  }
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "sectionKey": "feature-strip",
+    "eyebrow": "",
+    "title": "Service Highlights",
+    "bullets": "Focused Legal Consultation\nEnquiries From India & Abroad\nCivil, Criminal & Family Matters",
+    "order": 1,
+    "enabled": true
+  },
+  {
+    "sectionKey": "process",
+    "eyebrow": "How We Work",
+    "title": "A clear path from consultation to action",
+    "description": "Each matter is assessed on its own facts, documents and applicable law.",
+    "bullets": "Listen & Understand|Review the facts, concerns and relevant documents.\nStrategy & Advice|Discuss the legal position, options, risks and procedural steps.\nRepresentation & Updates|Take agreed legal steps and share progress when relevant.",
+    "order": 10,
+    "enabled": true
+  },
+  {
+    "sectionKey": "practice",
+    "eyebrow": "Our Practice Areas",
+    "title": "Legal services for important moments",
+    "description": "Explore the matters for which you can seek advice and representation.",
+    "order": 20,
+    "enabled": true
+  },
+  {
+    "sectionKey": "nri",
+    "eyebrow": "For Clients Living Abroad",
+    "title": "India-focused legal support for NRIs",
+    "description": "Distance should not prevent you from understanding your legal options. Discuss family disputes, inheritance, property, powers of attorney, and ongoing proceedings in India.",
+    "image": "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1300&q=80",
+    "ctaText": "Explore NRI Services",
+    "ctaHref": "/practice-areas/nri-legal-services",
+    "bullets": "Remote initial consultation\nDocument and case review\nCoordination for legal matters in India",
+    "order": 30,
+    "enabled": true
+  },
+  {
+    "sectionKey": "nri-geography",
+    "eyebrow": "International Enquiries",
+    "title": "India-related legal enquiries from abroad",
+    "description": "People residing overseas may enquire about India-related legal concerns. These are enquiry regions, not claims of foreign offices or completed representations.",
+    "bullets": "USA\nCanada\nUnited Kingdom\nAustralia\nUAE\nSingapore\nGermany\nNew Zealand",
+    "order": 35,
+    "enabled": true
+  },
+  {
+    "sectionKey": "why",
+    "eyebrow": "Our Approach",
+    "title": "Professional care at every stage",
+    "description": "Effective representation begins with clarity about the issues and the process.",
+    "bullets": "Clarity in Advice|Legal options explained in straightforward language.\nThoughtful Planning|Case strategy grounded in applicable law and documents.\nConfidential Communication|Respect for sensitive client information.\nResponsive Coordination|Practical follow-ups and updates on active matters.",
+    "order": 40,
+    "enabled": true
+  },
+  {
+    "sectionKey": "videos",
+    "eyebrow": "Legal Awareness",
+    "title": "Videos & legal explainers",
+    "description": "Short educational resources about common legal questions.",
+    "order": 50,
+    "enabled": true
+  },
+  {
+    "sectionKey": "team",
+    "eyebrow": "About the Advocate",
+    "title": "Meet Dr. Advocate Vishnu Sharma",
+    "description": "Learn about the legal practitioner behind this office.",
+    "order": 60,
+    "enabled": true
+  },
+  {
+    "sectionKey": "blog",
+    "eyebrow": "Knowledge Centre",
+    "title": "Latest legal articles",
+    "description": "Plain-language articles on Indian law and legal procedure.",
+    "order": 70,
+    "enabled": true
+  },
+  {
+    "sectionKey": "faqs",
+    "eyebrow": "Common Questions",
+    "title": "Frequently asked questions",
+    "description": "Helpful starting points before consulting an advocate.",
+    "order": 80,
+    "enabled": true
+  },
+  {
+    "sectionKey": "about-principles",
+    "eyebrow": "Professional Values",
+    "title": "A thoughtful approach to every legal matter",
+    "description": "The aim is responsible legal advice based on facts, evidence and applicable law.",
+    "bullets": "Clarity in Advice|Understand available procedures and options.\nConfidential Communication|Respect for client information.\nIndividual Case Strategy|Consider the particular facts and records.",
+    "order": 95,
+    "enabled": true
+  },
+  {
+    "sectionKey": "consultation",
+    "eyebrow": "Enquire Now",
+    "title": "Request a legal consultation",
+    "description": "Submit your enquiry through our secure contact form.",
+    "order": 90,
+    "enabled": true
+  },
+  {
+    "sectionKey": "professional-highlights",
+    "eyebrow": "Professional Profile",
+    "title": "Experience, Context & Care",
+    "description": "A few professional details about the office. Edit these in the admin after verification.",
+    "bullets": "15+|Years in legal practice\nDelhi|Primary office location\nIndian Law|Domestic and NRI-related enquiries",
+    "order": 28,
+    "enabled": true
+  },
+  {
+    "sectionKey": "courts-and-forums",
+    "eyebrow": "Courts of Practice",
+    "title": "Finding the Correct Legal Forum",
+    "description": "Indian courts, forums and tribunals have distinct rules and jurisdiction. A case assessment identifies the correct path.",
+    "bullets": "High Courts|Writs and appeals\nFamily Courts|Matrimonial and child matters\nCivil & Criminal Courts|Litigation and bail\nTribunals|Specialist statutory proceedings",
+    "ctaText": "Explore Courts & Tribunals",
+    "ctaHref": "/courts-of-practice",
+    "order": 42,
+    "enabled": true
+  },
+  {
+    "sectionKey": "professional-credentials",
+    "eyebrow": "Professional Journey",
+    "title": "A Practice Guided by Preparation",
+    "description": "Advocate Dr. Vishnu Sharma has over 15 years of practice experience and previously served as an Honorary Secretary Member of the Bar Council of Delhi. Please verify any further credentials before publication.",
+    "ctaText": "View Advocate Profile",
+    "ctaHref": "/profile",
+    "order": 62,
+    "enabled": true
+  },
+  {
+    "sectionKey": "publication-highlights",
+    "eyebrow": "Publications & Insights",
+    "title": "Legal Education & Verified Media",
+    "description": "This section is reserved for published legal resources and authenticated press appearances. No unverified awards or media affiliations are claimed.",
+    "ctaText": "Media & Publications",
+    "ctaHref": "/media",
+    "order": 76,
+    "enabled": true
+  },
+  {
+    "sectionKey": "about-introduction",
+    "eyebrow": "Who We Are",
+    "title": "Dedicated, considered legal representation",
+    "description": "Advocate Dr. Vishnu Sharma is a Delhi-based legal practitioner with more than fifteen years of legal practice experience. His professional work encompasses civil disputes, criminal proceedings, matrimonial and family matters, property concerns, and related legal questions. The practice is built around a straightforward belief: legal decisions should be based on facts, relevant documents and a realistic understanding of procedure.\\n\\nClients approach a lawyer at very different moments. Some have received a court notice and need to understand the next step. Others want to resolve a family dispute, clarify ownership of a property, recover a contractual payment, or discuss a criminal matter. People living outside India may need assistance understanding a case or document affecting property or family members here. Each situation requires its own evaluation rather than a generic answer.\\n\\nThe website has been created as an information and enquiry resource. It explains the types of matters on which a consultation may be requested, what documents are commonly relevant, and how a legal review generally begins. An enquiry does not, on its own, create an advocate–client relationship; the scope of any engagement must be confirmed separately.",
+    "image": "",
+    "ctaText": "",
+    "ctaHref": "",
+    "bullets": "",
+    "order": 96,
+    "enabled": true
+  },
+  {
+    "sectionKey": "about-process",
+    "eyebrow": "Our Method",
+    "title": "A considered approach to each legal matter",
+    "description": "A document-focused consultation process, adapted to individual requirements.",
+    "image": "",
+    "ctaText": "",
+    "ctaHref": "",
+    "bullets": "Listen & understand|Start with the person's objectives, the full chronology, pending proceedings and the facts that are in dispute. Identify what is urgent and what information is still missing.\nExamine & assess|Review the documents, applicable law, jurisdiction, limitation and available remedies. Explain important uncertainties instead of suggesting that every case has the same answer.\nPlan the next step|Consider whether the matter calls for communication, negotiation, mediation, drafting, an application or litigation. Set out the documents and procedural work involved.\nRepresent & communicate|Where an engagement is accepted, carry out the agreed legal steps and discuss significant developments. Procedural timelines and outcomes remain subject to the relevant forum.",
+    "order": 97,
+    "enabled": true
+  },
+  {
+    "sectionKey": "about-values",
+    "eyebrow": "Practice Values",
+    "title": "The principles behind our work",
+    "description": "Clear communication, thoughtful legal planning, and careful evaluation.",
+    "image": "",
+    "ctaText": "",
+    "ctaHref": "",
+    "bullets": "Clarity before action|Explain the legal question in accessible language, distinguish established facts from assumptions, and outline feasible avenues.\nDocument-led assessment|Use orders, correspondence, contracts, records and dates to understand the strength and limits of each position.\nRespect for confidentiality|Sensitive family, commercial and criminal matters should be discussed through appropriate channels, not exposed in public enquiries.\nNo promises of outcomes|A responsible legal assessment acknowledges the court's role, evidentiary issues, opposing positions and uncertainties.",
+    "order": 98,
+    "enabled": true
+  },
+  {
+    "sectionKey": "about-nri",
+    "eyebrow": "International Coordination",
+    "title": "Assistance with India-related concerns",
+    "description": "For a person living abroad, distance creates practical challenges: arranging documents, understanding Indian legal notices, reviewing powers of attorney, and coordinating communication across time zones. The practice provides a channel to enquire about such India-related matters without suggesting that it has offices or legal licensing in every other country.\\n\\nWhere questions involve foreign immigration law, cross-border recognition of orders or other foreign-jurisdiction issues, advice from appropriately qualified counsel in that jurisdiction may also be necessary.",
+    "image": "",
+    "ctaText": "",
+    "ctaHref": "",
+    "bullets": "",
+    "order": 99,
+    "enabled": true
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "label": "Home",
+    "href": "/",
+    "parent": "",
+    "order": 1,
+    "enabled": true
+  },
+  {
+    "label": "About",
+    "href": "/about",
+    "parent": "",
+    "order": 2,
+    "enabled": true
+  },
+  {
+    "label": "Practice Areas",
+    "href": "/practice-areas",
+    "parent": "",
+    "order": 3,
+    "enabled": true
+  },
+  {
+    "label": "Videos",
+    "href": "/videos",
+    "parent": "",
+    "order": 4,
+    "enabled": true
+  },
+  {
+    "label": "Blog",
+    "href": "/blog",
+    "parent": "",
+    "order": 5,
+    "enabled": true
+  },
+  {
+    "label": "Contact",
+    "href": "/contact",
+    "parent": "",
+    "order": 6,
+    "enabled": true
+  },
+  {
+    "label": "FAQs",
+    "href": "/faqs",
+    "parent": "",
+    "order": 7,
+    "enabled": true
+  },
+  {
+    "label": "Book Appointment",
+    "href": "/book-appointment",
+    "parent": "",
+    "order": 8,
+    "enabled": true
+  },
+  {
+    "label": "NRI Property Lawyer",
+    "href": "/practice-areas/nri-property-lawyer-india",
+    "parent": "Practice Areas",
+    "group": "NRI & Property",
+    "order": 10,
+    "enabled": true
+  },
+  {
+    "label": "NRI Legal Services",
+    "href": "/practice-areas/nri-legal-services",
+    "parent": "Practice Areas",
+    "group": "NRI & Property",
+    "order": 11,
+    "enabled": true
+  },
+  {
+    "label": "Real Estate & Title Search",
+    "href": "/practice-areas/real-estate-title-search",
+    "parent": "Practice Areas",
+    "group": "NRI & Property",
+    "order": 12,
+    "enabled": true
+  },
+  {
+    "label": "Property Lawyer",
+    "href": "/practice-areas/property-lawyer-delhi",
+    "parent": "Practice Areas",
+    "group": "NRI & Property",
+    "order": 13,
+    "enabled": true
+  },
+  {
+    "label": "Divorce Lawyer",
+    "href": "/practice-areas/divorce-lawyer-india",
+    "parent": "Practice Areas",
+    "group": "Family & Matrimonial",
+    "order": 30,
+    "enabled": true
+  },
+  {
+    "label": "Matrimonial Disputes & Custody",
+    "href": "/practice-areas/matrimonial-disputes-child-custody",
+    "parent": "Practice Areas",
+    "group": "Family & Matrimonial",
+    "order": 31,
+    "enabled": true
+  },
+  {
+    "label": "Prenuptial Agreements",
+    "href": "/practice-areas/prenuptial-agreements",
+    "parent": "Practice Areas",
+    "group": "Family & Matrimonial",
+    "order": 32,
+    "enabled": true
+  },
+  {
+    "label": "Adoption (Inter-country & Domestic)",
+    "href": "/practice-areas/adoption-intercountry-domestic",
+    "parent": "Practice Areas",
+    "group": "Family & Matrimonial",
+    "order": 33,
+    "enabled": true
+  },
+  {
+    "label": "Surrogacy Law",
+    "href": "/practice-areas/surrogacy-law-india",
+    "parent": "Practice Areas",
+    "group": "Family & Matrimonial",
+    "order": 34,
+    "enabled": true
+  },
+  {
+    "label": "Immigration, OCI/PIO & Citizenship",
+    "href": "/practice-areas/immigration-oci-citizenship",
+    "parent": "Practice Areas",
+    "group": "Immigration & Visa",
+    "order": 50,
+    "enabled": true
+  },
+  {
+    "label": "Visa Refusal Lawyer",
+    "href": "/practice-areas/visa-refusal-lawyer",
+    "parent": "Practice Areas",
+    "group": "Immigration & Visa",
+    "order": 51,
+    "enabled": true
+  },
+  {
+    "label": "US Visa Refusal",
+    "href": "/practice-areas/us-visa-refusal",
+    "parent": "Practice Areas",
+    "group": "Immigration & Visa",
+    "order": 52,
+    "enabled": true
+  },
+  {
+    "label": "UK Visa Refusal Appeal",
+    "href": "/practice-areas/uk-visa-refusal-appeal",
+    "parent": "Practice Areas",
+    "group": "Immigration & Visa",
+    "order": 53,
+    "enabled": true
+  },
+  {
+    "label": "Delhi High Court Lawyer",
+    "href": "/practice-areas/delhi-high-court-lawyer",
+    "parent": "Practice Areas",
+    "group": "Courts & Criminal",
+    "order": 70,
+    "enabled": true
+  },
+  {
+    "label": "Criminal Lawyer & Bail",
+    "href": "/practice-areas/criminal-lawyer-bail",
+    "parent": "Practice Areas",
+    "group": "Courts & Criminal",
+    "order": 71,
+    "enabled": true
+  },
+  {
+    "label": "Arbitration & Litigation",
+    "href": "/practice-areas/arbitration-litigation",
+    "parent": "Practice Areas",
+    "group": "Courts & Criminal",
+    "order": 72,
+    "enabled": true
+  },
+  {
+    "label": "Medical Negligence",
+    "href": "/practice-areas/medical-negligence",
+    "parent": "Practice Areas",
+    "group": "Additional Areas",
+    "order": 90,
+    "enabled": true
+  },
+  {
+    "label": "Corporate & NCLT",
+    "href": "/practice-areas/corporate-nclt",
+    "parent": "Practice Areas",
+    "group": "Additional Areas",
+    "order": 91,
+    "enabled": true
+  },
+  {
+    "label": "Banking & Finance",
+    "href": "/practice-areas/banking-finance",
+    "parent": "Practice Areas",
+    "group": "Additional Areas",
+    "order": 92,
+    "enabled": true
+  },
+  {
+    "label": "Advocate Profile",
+    "href": "/profile",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 300,
+    "enabled": true
+  },
+  {
+    "label": "Billing and Fees",
+    "href": "/billing-and-fees",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 301,
+    "enabled": true
+  },
+  {
+    "label": "Brief Contact Details",
+    "href": "/contact",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 302,
+    "enabled": true
+  },
+  {
+    "label": "Book Appointment",
+    "href": "/book-appointment",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 303,
+    "enabled": true
+  },
+  {
+    "label": "Practice Areas",
+    "href": "/practice-areas",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 304,
+    "enabled": true
+  },
+  {
+    "label": "Online Consultation",
+    "href": "/online-consultation",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 305,
+    "enabled": true
+  },
+  {
+    "label": "Recent Videos",
+    "href": "/videos",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 306,
+    "enabled": true
+  },
+  {
+    "label": "Legal Articles",
+    "href": "/blog",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 307,
+    "enabled": true
+  },
+  {
+    "label": "FAQs",
+    "href": "/faqs",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 308,
+    "enabled": true
+  },
+  {
+    "label": "Disclaimer",
+    "href": "/pages/disclaimer",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 309,
+    "enabled": true
+  },
+  {
+    "label": "Directions to Office",
+    "href": "/directions",
+    "parent": "Footer",
+    "group": "Important Links",
+    "order": 310,
+    "enabled": true
+  },
+  {
+    "label": "Media & Publications",
+    "href": "/media",
+    "parent": "Footer",
+    "group": "Legal Resources",
+    "order": 204,
+    "enabled": true
+  },
+  {
+    "label": "Legal Resources",
+    "href": "/resources",
+    "parent": "Footer",
+    "group": "Legal Resources",
+    "order": 205,
+    "enabled": true
+  },
+  {
+    "label": "NRI Legal Services",
+    "href": "/practice-areas/nri-legal-services",
+    "parent": "Footer",
+    "group": "Legal Resources",
+    "order": 206,
+    "enabled": true
+  },
+  {
+    "label": "Divorce Legal Services",
+    "href": "/practice-areas/divorce-lawyer-india",
+    "parent": "Footer",
+    "group": "Legal Resources",
+    "order": 207,
+    "enabled": true
+  },
+  {
+    "label": "Property Law Services",
+    "href": "/practice-areas/property-lawyer-delhi",
+    "parent": "Footer",
+    "group": "Legal Resources",
+    "order": 208,
+    "enabled": true
+  },
+  {
+    "label": "Criminal & Bail Services",
+    "href": "/practice-areas/criminal-lawyer-bail",
+    "parent": "Footer",
+    "group": "Legal Resources",
+    "order": 209,
+    "enabled": true
+  },
+  {
+    "label": "Privacy Policy",
+    "href": "/pages/privacy-policy",
+    "parent": "Footer",
+    "group": "Policies",
+    "order": 200,
+    "enabled": true
+  },
+  {
+    "label": "Terms of Use",
+    "href": "/pages/terms-of-use",
+    "parent": "Footer",
+    "group": "Policies",
+    "order": 201,
+    "enabled": true
+  }
+]

@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const pkg = JSON.parse(fs.readFileSync('package.json','utf8'));
+const errors = [];
+const check = (ok, msg) => {if(!ok) errors.push(msg)};
+check(pkg.dependencies?.next === '15.5.28', 'Next.js not pinned to security-patched 15.5.28');
+check(pkg.dependencies?.quill === '2.0.2', 'Quill 2.0.3 XSS version still configured');
+check(pkg.devDependencies?.postcss === '8.5.31', 'Direct PostCSS version should be 8.5.31');
+check(pkg.overrides?.postcss === '$postcss', 'Transitive PostCSS override is missing');
+check(pkg.overrides?.['postcss-selector-parser'] === '6.1.5', 'Tailwind 3 compatible selector parser backport is missing');
+const editor=fs.readFileSync('src/components/admin/QuillEditor.jsx','utf8');
+const publicRenderer=fs.readFileSync('src/components/site/RichContent.jsx','utf8');
+check(editor.includes('safeEditorHtml(html)') && editor.includes('safeEditorHtml(instance.root.innerHTML)'), 'Editor data should be sanitized on both input and output');
+check(publicRenderer.includes('sanitizeHtml(source'), 'Public rich HTML sanitizer missing');
+check(!fs.existsSync('.env.local'), 'Do not package secret-bearing .env.local');
+check(!fs.existsSync('package-lock.json'), 'An outdated package-lock.json must not accompany the patch; npm install should generate a new lock');
+console.log(JSON.stringify({status: errors.length?'FAIL':'PASS', next:pkg.dependencies?.next, quill:pkg.dependencies?.quill, postcss:pkg.devDependencies?.postcss, overrides:pkg.overrides, lockfile:'regenerate with npm install on a network-connected machine', securityAudit:'NOT RUN: requires registry.npmjs.org', errors},null,2));
+if(errors.length)process.exit(1);

@@ -1,0 +1,207 @@
+/* V8 — SINGLE ACCENT / TRANSPARENT SITE SKIN
+   All surface fills remain colorless. Only CTAs and selected navigation use
+   a tonal gradient of the *same* theme accent; images are never tinted. */
+html, body { background: #fff; color: var(--theme-ink); }
+html { color-scheme: light; }
+body { overflow-x: clip; }
+:root { --v8-page: #fff; --v8-line: #e1e5ea; }
+
+/* Preserve natural original images: absolutely no fades, shadows, tints or filters. */
+main img, .v8-hero-photo, .v8-page-banner img {
+  filter: none !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  mix-blend-mode: normal !important;
+}
+main :where(section, article, aside, div)[class*="bg-gradient"],
+main :where(section, article, aside, div)[class*="from-"][class*="to-"] {
+  background-image: none !important;
+}
+main :where(section, article, aside, div)[class*="bg-"] {
+  background-color: transparent !important;
+}
+main :where(section, article, aside, div)[class*="shadow-"] { box-shadow: none !important; }
+main :where(section, article, aside)[class*="text-white"],
+main :where(section, article, aside, div, h1, h2, h3, h4, p, span)[class*="text-white"] {
+  color: var(--theme-ink) !important;
+}
+main :where(p,span)[class*="text-slate-"] { color: var(--theme-muted) !important; }
+/* No color-tint surfaces (public site and editor). */
+.premium-glow, .premium-grid, .theme-section, .theme-tint, .theme-card,
+.glass-panel, .styled-badge, .stylish-badge, .accent-icon, .legal-panel,
+.spectrum-card, .editorial-card, .faq-premium details,
+.admin-card, .theme-gallery, .theme-gallery .theme-choice,
+.theme-gallery .theme-choice-active, .cms-quill .ql-toolbar.ql-snow,
+.v8-admin-shell, .v8-admin-shell aside, .v8-admin-shell header {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.legal-panel { background-image: url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=70") !important; }
+.spectrum-card::before { display: none !important; }
+.spectrum-card, .editorial-card, .admin-card, .faq-premium details, .glass-panel {
+  border: 1px solid var(--theme-border);
+  box-shadow: none !important;
+}
+.spectrum-card:nth-child(n) { --card-a: var(--theme-primary); }
+.spectrum-card:hover, .editorial-card:hover, .faq-premium details:hover,
+.faq-premium details[open], .theme-gallery .theme-choice:hover {
+  border-color: var(--theme-primary) !important;
+  background: transparent !important;
+  box-shadow: 0 12px 26px rgba(24,32,44,.075) !important;
+}
+.spectrum-card .accent-icon, .spectrum-card:hover .accent-icon {
+  color: var(--theme-primary) !important;
+  background: transparent !important;
+  border-color: var(--theme-border);
+  box-shadow: none !important;
+}
+.editorial-card img:hover, .editorial-card:hover img { box-shadow: none !important; }
+.accent-icon, .accent-link, .kicker, .stylish-badge, .theme-inline-icon { color: var(--theme-primary) !important; }
+.theme-inline-icon { background: transparent !important; }
+.gradient-title { background: none !important; color: var(--theme-ink) !important; -webkit-text-fill-color: currentColor; }
+.animated-rule, .site-accent-line { background: var(--theme-gradient) !important; }
+
+/* Buttons are the ONLY intentional colored fill in the public layout. */
+.btn-gold, .btn-dark, .v8-admin-active, .v5-page-active,
+.v5-page-btn:hover:not(:disabled) {
+  background: var(--theme-gradient) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.btn-gold:hover, .btn-dark:hover, .v5-page-btn:hover:not(:disabled) {
+  background: var(--theme-gradient) !important;
+  filter: brightness(.96);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px color-mix(in srgb, var(--theme-primary) 18%, transparent) !important;
+}
+.btn-gold :is(svg,span), .btn-dark :is(svg,span) { color: #fff !important; }
+.btn-soft, .btn-outline, .v8-menu-trigger, .v8-slider-arrow {
+  background: transparent !important;
+  border: 1px solid var(--theme-border) !important;
+  color: var(--theme-ink) !important;
+  box-shadow: none !important;
+}
+.btn-soft:hover, .btn-outline:hover, .v8-menu-trigger:hover, .v8-slider-arrow:hover {
+  border-color: var(--theme-primary) !important;
+  color: var(--theme-primary) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.v8-menu-trigger, .v8-slider-arrow { display: inline-grid; place-items: center; padding: .6rem; border-radius: 12px; }
+.field, .cms-quill, .v8-admin-shell input, .v8-admin-shell textarea, .v8-admin-shell select {
+  background: transparent !important;
+  border-color: var(--theme-border);
+}
+.field:focus { border-color: var(--theme-primary); }
+
+/* Header: transparent/frosted, no navy strip or dropshadow. */
+.v8-topbar { background: transparent !important; color: var(--theme-muted) !important; }
+.v8-topbar [class*="text-white"], .v8-topbar a { color: var(--theme-muted) !important; }
+.v8-topbar a:hover { color: var(--theme-primary) !important; }
+.v5-site-header { background: transparent !important; box-shadow: none !important; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.v5-site-header .v5-nav-button { color: var(--theme-ink); box-shadow: none; }
+.v5-site-header .v5-nav-button:hover, .v5-site-header .v5-nav-active,
+.v5-site-header .v5-nav-button:focus-visible {
+  background: var(--theme-gradient) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.v5-site-header .v5-nav-button:before { background: var(--theme-primary); }
+.v5-site-header .v5-mega { background: #fff !important; box-shadow: 0 18px 44px rgba(24,32,44,.09) !important; border-top-color: var(--theme-primary); }
+.v5-site-header .v5-mega-item { color: var(--theme-muted); }
+.v5-site-header .v5-mega-item:hover { background: transparent !important; color: var(--theme-primary) !important; box-shadow: none !important; }
+.v5-site-header .v5-mega > div:last-child { background: transparent !important; }
+
+/* Drawer slides in from the RIGHT, scrolls independently and supports Escape. */
+.v8-drawer-backdrop { position: fixed; z-index: 55; inset: 0; background: rgba(20,25,34,.18);
+  opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .32s ease, visibility .32s ease; }
+.v8-drawer-backdrop.is-open { opacity: 1; visibility: visible; pointer-events: auto; }
+.v8-mobile-drawer { position: fixed; z-index: 60; inset: 0 0 0 auto; width: min(400px, 92vw);
+  display: flex; flex-direction: column; background: #fff; color: var(--theme-ink);
+  border-left: 1px solid var(--theme-border); box-shadow: -10px 0 34px rgba(0,0,0,.08);
+  transform: translateX(103%); visibility: hidden; transition: transform .36s cubic-bezier(.2,.8,.2,1), visibility .36s ease; }
+.v8-mobile-drawer.is-open { transform: translateX(0); visibility: visible; }
+.v8-drawer-scroll { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.v8-mobile-drawer nav a:not(.btn-gold):hover { color: var(--theme-primary) !important; background: transparent !important; }
+.v8-mobile-drawer nav button:hover { color: var(--theme-primary); }
+@media(min-width:1280px) { .v8-mobile-drawer,.v8-drawer-backdrop { display:none !important; } }
+
+/* Image-first hero: a genuinely clear, non-tinted photo alongside readable copy. */
+.v8-hero, .v5-hero { min-height: 0 !important; background: transparent !important; color: var(--theme-ink) !important; }
+.v8-hero-grid { display: grid; grid-template-columns: minmax(0,1.08fr) minmax(0, .92fr); align-items: stretch;
+  min-height: max(630px, calc(100svh - 152px)); gap: clamp(24px,4vw,65px); }
+.v8-hero-copy { display: flex; flex-direction: column; justify-content: center; padding: 24px 0; }
+.v8-hero-copy h1 { color: var(--theme-ink) !important; }
+.v8-eyebrow { color: var(--theme-primary); }
+.v8-hero-picture { min-height: 510px; overflow: hidden; }
+.v8-hero-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.v8-hero-about { background: transparent !important; border-color: var(--theme-border) !important;
+  box-shadow: none !important; backdrop-filter: none !important; }
+.v8-hero-stats > div { background: transparent !important; }
+.v8-slide-dot { height: 6px; width: 13px; border-radius: 99px; border: 1px solid var(--theme-border); background: transparent; transition: width .25s; }
+.v8-slide-dot.is-active { background: var(--theme-primary); width: 30px; border-color: var(--theme-primary); }
+.marquee-rail { background: transparent !important; border-color: var(--theme-border) !important; color: var(--theme-primary) !important; }
+.v8-page-banner { background: transparent !important; color: var(--theme-ink) !important; }
+.v8-page-photo-wrap { overflow: hidden; }
+.v8-page-photo-wrap img { object-position: center; display: block; }
+@media(max-width:1023px) {
+  .v8-hero-grid { min-height: auto; }
+  .v8-hero-copy { padding: 30px 0; }
+  .v8-hero-picture { min-height: 440px; }
+}
+@media(max-width:767px) {
+  .v8-hero-grid { grid-template-columns: 1fr; gap: 12px; }
+  .v8-hero-copy { padding: 25px 0 0; }
+  .v8-hero-picture { min-height: 260px; max-height: 360px; order: -1; margin-inline: -20px; }
+  .v8-hero-photo { height: 300px; }
+  .v8-page-banner > div { gap: 0; }
+  .v8-page-photo-wrap { max-height: 275px; }
+  .v8-hero-stats { margin-top: 12px; }
+}
+
+/* Footer is open/airy like rest of site; theme accent appears in links and rule. */
+.site-footer { background: transparent !important; color: var(--theme-muted) !important;
+  border-top: 1px solid var(--theme-border); }
+.site-footer :is(h2,h3,h4, strong) { color: var(--theme-ink) !important; border-color: var(--theme-border); }
+.site-footer :is(p,span,a,svg) { color: var(--theme-muted) !important; }
+.site-footer a:hover, .site-footer a:hover svg { color: var(--theme-primary) !important; }
+.site-footer :is([class*="bg-"]) { background: transparent !important; }
+.site-footer .bg-gold, .site-footer > div:first-child { background: var(--theme-gradient) !important; }
+.site-footer [class*="border-white"] { border-color: var(--theme-border) !important; }
+.site-footer .footer-heading { color: var(--theme-ink) !important; }
+
+/* Neutral admin surfaces, sidebar selection uses same accent. */
+.v8-admin-shell aside { border-right: 1px solid var(--theme-border); background-color: #dbdddf !important;}
+.v8-admin-shell aside :is(p,div,span,a) { color: var(--theme-ink); }
+.v8-admin-shell aside nav a:hover { color: var(--theme-primary) !important; background: transparent !important; }
+.v8-admin-shell aside nav a.v8-admin-active { background: var(--theme-gradient) !important; color: #f4f4f5 !important; }
+.v8-admin-shell aside nav a.v8-admin-active svg { color: #f4f5f8 !important; }
+.v8-admin-shell .theme-choice { background: transparent !important; }
+.v8-admin-shell :is([class*="bg-gradient"], [class*="from-"][class*="to-"]) { background-image: none !important; }
+
+/* Accessibility */
+:focus-visible { outline-color: var(--theme-primary) !important; }
+@media (prefers-reduced-motion: reduce) {
+  .v8-mobile-drawer,.v8-drawer-backdrop,.editorial-card,.spectrum-card { transition: none !important; }
+}
+
+/* Floating navigation control follows the selected single-accent button theme. */
+.v8-scroll-top { background: var(--theme-dark) !important; color: #fff !important; border-color: transparent !important; box-shadow: none !important; }
+.v8-scroll-top:hover { background: var(--theme-gradient) !important; box-shadow: 0 8px 20px color-mix(in srgb, var(--theme-primary) 15%,transparent) !important; }
+/* Legacy active pills and links never re-introduce a second fill color. */
+main :is(button,a)[class*="bg-[var(--theme-dark)]"],
+main :is(button,a)[class*="bg-[var(--theme-primary)]"],
+main :is(button,a)[class*="bg-midnight"],
+main :is(button,a)[class*="bg-gradient"] {
+  background: var(--theme-gradient) !important;
+  color: #fff !important;
+}
+main :is(button,a)[class*="bg-[var(--theme-tint)]"]:not(.btn-gold):not(.btn-dark),
+main :is(button,a)[class*="bg-white"]:not(.btn-gold):not(.btn-dark) {
+  background: transparent !important;
+}
+/* Clear all image-linked cards, not just the main banner. */
+main .editorial-card img, main .spectrum-card img, main .v8-hero-photo {
+  opacity: 1 !important; filter: none !important; box-shadow: none !important;
+}

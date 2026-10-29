@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "eyebrow": "THE PRACTICE",
+    "title": "Where careful preparation meets responsible advocacy.",
+    "subtitle": "Indian legal matters require clarity, confidentiality and an understanding of the person behind the paperwork."
+  },
+  "introduction": [
+    "Advocate Dr. Vishnu Sharma is a Delhi-based legal practitioner with more than fifteen years of legal practice experience. His professional work encompasses civil disputes, criminal proceedings, matrimonial and family matters, property concerns, and related legal questions. The practice is built around a straightforward belief: legal decisions should be based on facts, relevant documents and a realistic understanding of procedure.",
+    "Clients approach a lawyer at very different moments. Some have received a court notice and need to understand the next step. Others want to resolve a family dispute, clarify ownership of a property, recover a contractual payment, or discuss a criminal matter. People living outside India may need assistance understanding a case or document affecting property or family members here. Each situation requires its own evaluation rather than a generic answer.",
+    "The website has been created as an information and enquiry resource. It explains the types of matters on which a consultation may be requested, what documents are commonly relevant, and how a legal review generally begins. An enquiry does not, on its own, create an advocate–client relationship; the scope of any engagement must be confirmed separately."
+  ],
+  "approach": [
+    {
+      "number": "01",
+      "title": "Listen & understand",
+      "description": "Start with the person's objectives, the full chronology, pending proceedings and the facts that are in dispute. Identify what is urgent and what information is still missing."
+    },
+    {
+      "number": "02",
+      "title": "Examine & assess",
+      "description": "Review the documents, applicable law, jurisdiction, limitation and available remedies. Explain important uncertainties instead of suggesting that every case has the same answer."
+    },
+    {
+      "number": "03",
+      "title": "Plan the next step",
+      "description": "Consider whether the matter calls for communication, negotiation, mediation, drafting, an application or litigation. Set out the documents and procedural work involved."
+    },
+    {
+      "number": "04",
+      "title": "Represent & communicate",
+      "description": "Where an engagement is accepted, carry out the agreed legal steps and discuss significant developments. Procedural timelines and outcomes remain subject to the relevant forum."
+    }
+  ],
+  "values": [
+    {
+      "title": "Clarity before action",
+      "description": "Explain the legal question in accessible language, distinguish established facts from assumptions, and outline feasible avenues."
+    },
+    {
+      "title": "Document-led assessment",
+      "description": "Use orders, correspondence, contracts, records and dates to understand the strength and limits of each position."
+    },
+    {
+      "title": "Respect for confidentiality",
+      "description": "Sensitive family, commercial and criminal matters should be discussed through appropriate channels, not exposed in public enquiries."
+    },
+    {
+      "title": "No promises of outcomes",
+      "description": "A responsible legal assessment acknowledges the court's role, evidentiary issues, opposing positions and uncertainties."
+    }
+  ],
+  "expertise": [
+    {
+      "title": "Family and matrimonial",
+      "href": "/practice-areas/divorce-lawyer-india",
+      "description": "Divorce, maintenance, family proceedings, parenting issues and child welfare considerations."
+    },
+    {
+      "title": "Civil disputes and property",
+      "href": "/practice-areas/property-lawyer-delhi",
+      "description": "Contracts, property records, injunctions, ownership questions, partition and civil litigation."
+    },
+    {
+      "title": "Criminal proceedings",
+      "href": "/practice-areas/criminal-lawyer-bail",
+      "description": "Bail, criminal process, court appearances and procedural questions at different case stages."
+    },
+    {
+      "title": "NRI legal matters",
+      "href": "/practice-areas/nri-legal-services",
+      "description": "India-related inheritance, property and family questions for people residing abroad."
+    },
+    {
+      "title": "Commercial and recovery",
+      "href": "/practice-areas/money-recovery-suits",
+      "description": "Unpaid dues, contracts, commercial disagreements and dispute resolution."
+    },
+    {
+      "title": "Court and tribunal matters",
+      "href": "/courts-of-practice",
+      "description": "Identifying the appropriate forum for a proceeding under its governing jurisdiction rules."
+    }
+  ],
+  "nri": [
+    "For a person living abroad, distance creates practical challenges: arranging documents, understanding Indian legal notices, reviewing powers of attorney, and coordinating communication across time zones. The practice provides a channel to enquire about such India-related matters without suggesting that it has offices or legal licensing in every other country.",
+    "Where questions involve foreign immigration law, cross-border recognition of orders or other foreign-jurisdiction issues, advice from appropriately qualified counsel in that jurisdiction may also be necessary."
+  ],
+  "questions": [
+    {
+      "question": "Can I ask a question before booking a meeting?",
+      "answer": "Yes. Use the contact form to describe the general type of matter and request information about consultation availability. Avoid submitting highly confidential evidence in an initial public form."
+    },
+    {
+      "question": "Does the office handle matters outside Delhi?",
+      "answer": "Whether a particular matter can be taken up depends on its forum, jurisdiction, nature, procedural requirements and professional availability. This is assessed individually."
+    },
+    {
+      "question": "Can NRIs enquire remotely?",
+      "answer": "Yes, overseas clients can send a preliminary enquiry. Any document review, appearance, authorisation or engagement is confirmed separately."
+    },
+    {
+      "question": "Will a consultation guarantee a favourable result?",
+      "answer": "No. Legal outcomes depend on law, evidence, the opposing position and decisions of courts or competent authorities."
+    }
+  ]
+}

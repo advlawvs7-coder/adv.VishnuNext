@@ -1,0 +1,196 @@
+path,type,title
+/,Static Page,Homepage
+/about,Static Page,About
+/practice-areas,Static Page,Practice Areas
+/blog,Static Page,Blog
+/team,Static Page,Team
+/videos,Static Page,Videos
+/faqs,Static Page,Faqs
+/contact,Static Page,Contact
+/book-appointment,Static Page,Book Appointment
+/online-consultation,Static Page,Online Consultation
+/profile,Static Page,Profile
+/billing-and-fees,Static Page,Billing And Fees
+/directions,Static Page,Directions
+/courts-of-practice,Static Page,Courts Of Practice
+/media,Static Page,Media
+/judgments,Static Page,Judgments
+/resources,Static Page,Resources
+/practice-areas/nri-property-lawyer-india,Practice Area,NRI Property Lawyer
+/practice-areas/nri-legal-services,Practice Area,NRI Legal Services
+/practice-areas/real-estate-title-search,Practice Area,Real Estate & Title Search
+/practice-areas/property-lawyer-delhi,Practice Area,Property Lawyer
+/practice-areas/divorce-lawyer-india,Practice Area,Divorce Lawyer
+/practice-areas/matrimonial-disputes-child-custody,Practice Area,Matrimonial Disputes & Custody
+/practice-areas/prenuptial-agreements,Practice Area,Prenuptial Agreements
+/practice-areas/adoption-intercountry-domestic,Practice Area,Adoption (Inter-country & Domestic)
+/practice-areas/surrogacy-law-india,Practice Area,Surrogacy Law
+/practice-areas/immigration-oci-citizenship,Practice Area,"Immigration, OCI/PIO & Citizenship"
+/practice-areas/visa-refusal-lawyer,Practice Area,Visa Refusal Lawyer
+/practice-areas/us-visa-refusal,Practice Area,US Visa Refusal
+/practice-areas/uk-visa-refusal-appeal,Practice Area,UK Visa Refusal Appeal
+/practice-areas/delhi-high-court-lawyer,Practice Area,Delhi High Court Lawyer
+/practice-areas/criminal-lawyer-bail,Practice Area,Criminal Lawyer & Bail
+/practice-areas/arbitration-litigation,Practice Area,Arbitration & Litigation
+/practice-areas/medical-negligence,Practice Area,Medical Negligence
+/practice-areas/corporate-nclt,Practice Area,Corporate & NCLT
+/practice-areas/banking-finance,Practice Area,Banking & Finance
+/practice-areas/adoptions-inter-country,Practice Area,Adoptions Inter-Country
+/practice-areas/domestic-adoptions,Practice Area,Domestic Adoptions
+/practice-areas/succession-certificate,Practice Area,Succession Certificate
+/practice-areas/real-estate-services,Practice Area,Real Estate Services
+/practice-areas/nclt-matters,Practice Area,NCLT Matters
+/practice-areas/transfer-of-property,Practice Area,Transfer of Property
+/practice-areas/landlord-tenant-dispute,Practice Area,Landlord Tenant Dispute
+/practice-areas/partition-of-property,Practice Area,Partition of Property
+/practice-areas/tax-matters,Practice Area,Tax Matters
+/practice-areas/prenuptial-agreement,Practice Area,Prenuptial Agreement
+/practice-areas/builder-developer-claims,Practice Area,Builder / Developer Claims
+/practice-areas/criminal-litigation-and-bail,Practice Area,Criminal Litigation and Bail
+/practice-areas/immigration-laws,Practice Area,Immigration Laws
+/practice-areas/citizenship-and-immigration,Practice Area,Citizenship & Immigration
+/practice-areas/divorce-and-family-laws,Practice Area,Divorce and Family Laws
+/practice-areas/nri-laws-nri-lawyers,Practice Area,NRI Laws / NRI Lawyers
+/practice-areas/international-child-abduction,Practice Area,International Child Abduction
+/practice-areas/oci-pio-card-assistance,Practice Area,OCI / PIO Card Assistance
+/practice-areas/international-arbitration,Practice Area,International Arbitration
+/practice-areas/foreigners-registration,Practice Area,Foreigners Registration
+/practice-areas/business-and-corporate-laws,Practice Area,Business and Corporate Laws
+/practice-areas/will-and-fraudulent-documents,Practice Area,Will & Fraudulent Documents
+/practice-areas/title-documents-search,Practice Area,Title Documents Search
+/practice-areas/surrogacy-law,Practice Area,Surrogacy Law
+/practice-areas/banking-finance-matters,Practice Area,Banking / Finance Matters
+/practice-areas/child-custody-matters,Practice Area,Child Custody Matters
+/practice-areas/litigation-matters,Practice Area,Litigation Matters
+/practice-areas/inter-country-matrimonial-laws,Practice Area,Inter-Country Matrimonial Laws
+/practice-areas/liaison-tasks,Practice Area,Liaison Tasks
+/practice-areas/india-visa-assistance,Practice Area,India Visa Assistance
+/practice-areas/administrative-law,Practice Area,Administrative Law
+/practice-areas/adoption-international-and-domestic,Practice Area,Adoption (International & Domestic)
+/practice-areas/agricultural-law-land-acquisition,Practice Area,Agricultural Law (Land Acquisition)
+/practice-areas/alimony-divorce-and-post-divorce,Practice Area,Alimony (Divorce & Post Divorce)
+/practice-areas/animal-law-cruelty-cases,Practice Area,Animal Law (Cruelty Cases)
+/practice-areas/appellate-practice,Practice Area,Appellate Practice
+/practice-areas/arbitration-international-and-domestic,Practice Area,Arbitration (International & Domestic)
+/practice-areas/assault-mental-and-physical,Practice Area,Assault (Mental & Physical)
+/practice-areas/asset-protection,Practice Area,Asset Protection
+/practice-areas/banking-and-finance,Practice Area,Banking & Finance
+/practice-areas/banking-law,Practice Area,Banking Law
+/practice-areas/business-litigation,Practice Area,Business Litigation
+/practice-areas/business-law,Practice Area,Business Law
+/practice-areas/battery,Practice Area,Battery
+/practice-areas/child-abuse,Practice Area,Child Abuse
+/practice-areas/child-support-and-custody,Practice Area,Child Support & Custody
+/practice-areas/child-visitation,Practice Area,Child Visitation
+/practice-areas/civil-litigation,Practice Area,Civil Litigation
+/practice-areas/constitutional-law,Practice Area,Constitutional Law
+/practice-areas/construction-law,Practice Area,Construction Law
+/practice-areas/consumer-law,Practice Area,Consumer Law
+/practice-areas/contracts,Practice Area,Contracts
+/practice-areas/copyright,Practice Area,Copyright
+/practice-areas/credit-and-mortgage,Practice Area,Credit & Mortgage
+/practice-areas/criminal-defense,Practice Area,Criminal Defense
+/practice-areas/criminal-law,Practice Area,Criminal Law
+/practice-areas/murder,Practice Area,Murder
+/practice-areas/naturalization-and-citizenship,Practice Area,Naturalization & Citizenship
+/practice-areas/negligence,Practice Area,Negligence
+/practice-areas/nonprofit-organizations,Practice Area,Nonprofit Organizations
+/practice-areas/patents,Practice Area,Patents
+/practice-areas/personal-property,Practice Area,Personal Property
+/practice-areas/pre-nuptial-agreements,Practice Area,Pre-nuptial Agreements
+/practice-areas/probate,Practice Area,Probate
+/practice-areas/professional-liability,Practice Area,Professional Liability
+/practice-areas/project-finance,Practice Area,Project Finance
+/practice-areas/property-law,Practice Area,Property Law
+/practice-areas/property-management,Practice Area,Property Management
+/practice-areas/public-finance,Practice Area,Public Finance
+/practice-areas/debt-relief,Practice Area,Debt Relief
+/practice-areas/debtor-and-creditor,Practice Area,Debtor & Creditor
+/practice-areas/defamation-libel-and-slander,Practice Area,"Defamation, Libel & Slander"
+/practice-areas/divorce-foreign-and-indian,Practice Area,Divorce (Foreign & Indian)
+/practice-areas/domestic-violence,Practice Area,Domestic Violence
+/practice-areas/education-law,Practice Area,Education Law
+/practice-areas/environmental-law,Practice Area,Environmental Law
+/practice-areas/estate-and-trust,Practice Area,Estate & Trust
+/practice-areas/extradition,Practice Area,Extradition
+/practice-areas/family-law,Practice Area,Family Law
+/practice-areas/finance,Practice Area,Finance
+/practice-areas/general-practice,Practice Area,General Practice
+/practice-areas/government-contracts,Practice Area,Government Contracts
+/practice-areas/information-technology,Practice Area,Information Technology
+/practice-areas/informed-consent,Practice Area,Informed Consent
+/practice-areas/inheritance-law,Practice Area,Inheritance Law
+/practice-areas/intellectual-property,Practice Area,Intellectual Property
+/practice-areas/international-trade,Practice Area,International Trade
+/practice-areas/landlord-and-tenant-law,Practice Area,Landlord & Tenant Law
+/practice-areas/islamic-law,Practice Area,Islamic Law
+/practice-areas/litigation,Practice Area,Litigation
+/practice-areas/mass-tort,Practice Area,Mass Tort
+/practice-areas/medical-law,Practice Area,Medical Law
+/practice-areas/medical-malpractice,Practice Area,Medical Malpractice
+/practice-areas/motor-vehicle-accidents,Practice Area,Motor Vehicle Accidents
+/practice-areas/rape-legal-support,Practice Area,Rape (Legal Support)
+/practice-areas/real-estate,Practice Area,Real Estate
+/practice-areas/securities,Practice Area,Securities
+/practice-areas/separation,Practice Area,Separation
+/practice-areas/torts,Practice Area,Torts
+/practice-areas/trade,Practice Area,Trade
+/practice-areas/trade-investment,Practice Area,Trade Investment
+/practice-areas/trade-secrets,Practice Area,Trade Secrets
+/practice-areas/trademark,Practice Area,Trademark
+/practice-areas/weapon-laws,Practice Area,Weapon Laws
+/practice-areas/will,Practice Area,Will
+/practice-areas/workers-compensation,Practice Area,Workers Compensation
+/practice-areas/wrongful-termination,Practice Area,Wrongful Termination
+/practice-areas/divorce-matrimonial-law,Practice Area,Divorce & Matrimonial Law
+/practice-areas/child-custody-guardianship,Practice Area,Child Custody & Guardianship
+/practice-areas/domestic-violence-law,Practice Area,Domestic Violence Matters
+/practice-areas/will-succession-lawyer,Practice Area,"Wills, Succession & Inheritance"
+/practice-areas/cybercrime-lawyer,Practice Area,Cybercrime & Online Fraud
+/practice-areas/cheque-bounce-ni-act,Practice Area,Cheque Bounce Matters
+/practice-areas/money-recovery-suits,Practice Area,Debt & Money Recovery
+/practice-areas/arbitration-commercial,Practice Area,Arbitration & Commercial Disputes
+/blog/mutual-consent-divorce-delhi-process,Blog,Mutual Consent Divorce in Delhi: Process and Key Documents
+/blog/nri-property-dispute-india,Blog,How Can an NRI Handle a Property Dispute in India?
+/blog/cheque-bounce-notice-timeline,Blog,Cheque Bounce Notice: Understanding the Timeline
+/blog/bail-application-process-india,Blog,Understanding Bail Applications in India
+/blog/wills-and-succession-india,Blog,A Practical Guide to Wills and Succession
+/blog/cyber-fraud-complaint-india,Blog,Cyber Fraud Complaint: First Steps
+/blog/what-to-check-before-buying-property-in-delhi,Blog,What to Check Before Buying Property in Delhi
+/blog/nri-property-inheritance-in-india-a-starter-guide,Blog,NRI Property Inheritance in India: A Starter Guide
+/blog/what-happens-when-a-family-property-is-jointly-owned,Blog,What Happens When a Family Property Is Jointly Owned?
+/blog/understanding-mutual-consent-divorce-in-india,Blog,Understanding Mutual Consent Divorce in India
+/blog/child-custody-how-courts-consider-welfare,Blog,Child Custody: How Courts Consider Welfare
+/blog/what-should-you-do-after-receiving-a-legal-notice,Blog,What Should You Do After Receiving a Legal Notice?
+/blog/cheque-bounce-initial-steps-and-documents,Blog,Cheque Bounce: Initial Steps and Documents
+/blog/bail-applications-practical-questions,Blog,Bail Applications: Practical Questions
+/blog/online-fraud-complaint-preserve-evidence-first,Blog,Online Fraud Complaint: Preserve Evidence First
+/blog/power-of-attorney-for-nris-common-precautions,Blog,Power of Attorney for NRIs: Common Precautions
+/blog/understanding-a-property-title-search,Blog,Understanding a Property Title Search
+/blog/how-a-commercial-arbitration-clause-works,Blog,How a Commercial Arbitration Clause Works
+/blog/maintenance-questions-in-matrimonial-disputes,Blog,Maintenance Questions in Matrimonial Disputes
+/blog/when-can-a-civil-suit-be-filed,Blog,When Can a Civil Suit Be Filed?
+/blog/understanding-wills-and-succession-certificates,Blog,Understanding Wills and Succession Certificates
+/blog/what-is-an-interim-injunction,Blog,What Is an Interim Injunction?
+/blog/medical-records-and-negligence-allegations,Blog,Medical Records and Negligence Allegations
+/blog/basic-documents-for-a-nri-legal-consultation,Blog,Basic Documents for a NRI Legal Consultation
+/blog/corporate-disputes-first-documents-to-review,Blog,Corporate Disputes: First Documents to Review
+/blog/what-does-a-delhi-high-court-appeal-involve,Blog,What Does a Delhi High Court Appeal Involve?
+/blog/how-does-a-landlord-tenant-dispute-begin,Blog,How Does a Landlord–Tenant Dispute Begin?
+/blog/divorce-across-borders-indian-court-considerations,Blog,Divorce Across Borders: Indian Court Considerations
+/blog/how-to-prepare-for-your-first-lawyer-consultation,Blog,How to Prepare for Your First Lawyer Consultation
+/blog/consumer-complaints-starting-points,Blog,Consumer Complaints: Starting Points
+/videos/live-in-relationships-legal-rights-in-india,Video Guide,Live-in Relationships: Legal Rights in India
+/videos/understanding-cheque-bounce-law,Video Guide,Understanding Cheque Bounce Law
+/videos/senior-citizens-and-legal-protection,Video Guide,Senior Citizens and Legal Protection
+/videos/what-is-mutual-consent-divorce,Video Guide,What Is Mutual Consent Divorce?
+/videos/nri-property-and-power-of-attorney,Video Guide,NRI Property and Power of Attorney
+/videos/bail-remand-and-investigation-stages,Video Guide,"Bail, Remand and Investigation Stages"
+/videos/property-documents-before-purchase,Video Guide,Property Documents Before Purchase
+/videos/child-custody-and-welfare,Video Guide,Child Custody and Welfare
+/videos/money-recovery-and-commercial-claims,Video Guide,Money Recovery and Commercial Claims
+/pages/privacy-policy,CMS Page,Privacy Policy
+/pages/disclaimer,CMS Page,Disclaimer
+/pages/billing-and-fees,CMS Page,Billing and Fees
+/pages/terms-of-use,CMS Page,Terms of Use
+/pages/media-and-publications,CMS Page,Media and Publications
