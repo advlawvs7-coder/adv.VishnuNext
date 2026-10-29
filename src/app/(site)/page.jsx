@@ -284,13 +284,32 @@ export default async function HomePage() {
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {visualHighlights.map((x) => (
-              <Link key={x.slug} href={`/practice-areas/${x.slug}`} className="editorial-card group overflow-hidden rounded-[20px] border border-[var(--theme-border)] transition duration-300 hover:-translate-y-1 hover:border-[var(--theme-primary)]">
-                <div className="h-56 overflow-hidden"><img src={asset(x.image)} alt={`Illustration for ${x.title}`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"/></div>
+              <Link
+                key={x.slug}
+                href={`/practice-areas/${x.slug}`}
+                className="editorial-card group overflow-hidden rounded-[20px] border border-[var(--theme-border)] transition duration-300 hover:-translate-y-1 hover:border-[var(--theme-primary)]"
+              >
+                <div className="h-56 overflow-hidden">
+                  <img
+                    src={asset(x.image)}
+                    alt={`Illustration for ${x.title}`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
                 <div className="p-6">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[var(--theme-primary)]">{x.category || "Legal Service"}</span>
-                  <h3 className="mt-3 font-serif text-2xl font-bold leading-tight text-[var(--theme-ink)]">{x.title}</h3>
-                  <p className="mt-3 line-clamp-2 text-sm leading-6 text-[var(--theme-muted)]">{x.summary}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-[var(--theme-primary)]">Read this guide <ArrowUpRight size={17}/></span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-[var(--theme-primary)]">
+                    {x.category || "Legal Service"}
+                  </span>
+                  <h3 className="mt-3 font-serif text-2xl font-bold leading-tight text-[var(--theme-ink)]">
+                    {x.title}
+                  </h3>
+                  <p className="mt-3 line-clamp-2 text-sm leading-6 text-[var(--theme-muted)]">
+                    {x.summary}
+                  </p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-[var(--theme-primary)]">
+                    Read this guide <ArrowUpRight size={17} />
+                  </span>
                 </div>
               </Link>
             ))}
@@ -390,7 +409,6 @@ export default async function HomePage() {
           <div className="relative">
             <img
               src={asset(
-               
                 "https://res.cloudinary.com/damwcqwvs/image/upload/v1792846391/homec.jpg",
               )}
               className="h-[380px] w-full object-cover shadow-editorial"
@@ -533,19 +551,21 @@ export default async function HomePage() {
 
       <section className="section-pad ">
         <div className="container-site">
-          <div className="flex flex-wrap justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-4">
             <SectionHeading
               eyebrow={legalVideos.eyebrow || "LEGAL AWARENESS"}
               title={legalVideos.title || "Videos and legal explainers"}
               description={legalVideos.description}
             />
-            <Link href="/videos" className="btn-dark mb-10">
+
+            <Link href="/videos" className="btn-dark">
               View Video Library <ArrowRight size={16} />
             </Link>
           </div>
         </div>
-        <div className="grid gap-7 md:grid-cols-3">
-          {videos.slice(0, 3).map((v) => (
+
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {videos.slice(0, 4).map((v) => (
             <VideoCard key={v.title} video={v} />
           ))}
         </div>

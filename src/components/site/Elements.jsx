@@ -25,6 +25,7 @@ import {
 import { asset, ytId } from "@/lib/utils";
 import MotionSurface from "./MotionSurface";
 import { topicImage } from "@/lib/topic-image";
+import VideoCardPlayer from "./VideoPopup";
 const icons = {
   scale: Scale,
   "heart-handshake": HeartHandshake,
@@ -160,29 +161,48 @@ export function PostCard({ post }) {
     </MotionSurface>
   );
 }
+
 export function VideoCard({ video }) {
   const id = ytId(video.youtubeUrl);
   const slug = video.slug || slugify(video.title);
+  const thumbnail =
+    getYouTubeThumbnail(video.youtubeUrl) || asset(video.thumbnail);
+
   return (
     <MotionSurface>
-      <Link
-        href={`/videos/${slug}`}
-        className="editorial-card group block border border-[var(--theme-border)] bg-white shadow-sm"
-      >
-        <div className="relative aspect-video overflow-hidden bg-[var(--theme-dark)]">
-          <img
-            src={asset(video.thumbnail)}
-            alt={`Illustrative cover for ${video.title}`}
-            loading="lazy"
-            className="h-full w-full object-cover"
-          />
-          
-          <span className="absolute inset-0 grid place-items-center">
-            <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/70 bg-[var(--theme-primary)] text-white shadow-2xl transition group-hover:scale-125 group-hover:bg-primary">
-              <Play fill="currentColor" size={21} />
-            </span>
-          </span>
-          <span className="absolute bottom-4 left-4 rounded-full border border-[var(--theme-border)] bg-white px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-[var(--theme-ink)]">
+      <article className="editorial-card group overflow-hidden rounded-xl border border-[var(--theme-border)] bg-white shadow-sm transition hover:shadow-md">
+        <div className="relative aspect-[16/8] overflow-hidden bg-[var(--theme-dark)]">
+          {thumbnail ? (
+            <img
+              src={thumbnail}
+              alt={`${video.title} video thumbnail`}
+              loading="lazy"
+              className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center bg-[var(--theme-tint)]">
+              <Film size={30} className="text-[var(--theme-primary)]" />
+            </div>
+          )}
+
+          {id ? (
+            <VideoCardPlayer
+              youtubeUrl={video.youtubeUrl}
+              title={video.title}
+            />
+          ) : (
+            <Link
+              href={`/videos/${slug}`}
+              aria-label={`Open ${video.title} topic guide`}
+              className="absolute inset-0 z-10 grid place-items-center"
+            >
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--theme-primary)] text-white shadow-lg">
+                <Play fill="currentColor" size={15} />
+              </span>
+            </Link>
+          )}
+
+          <span className="pointer-events-none absolute bottom-2 left-2 rounded-full bg-white px-2 py-1 text-[9px] font-bold uppercase text-[var(--theme-ink)]">
             {id
               ? video.sourcePublisher
                 ? `External: ${video.sourcePublisher}`
@@ -190,26 +210,44 @@ export function VideoCard({ video }) {
               : "Demo explainer"}
           </span>
         </div>
-        <div className="p-6">
-          <h3 className="font-serif text-xl font-bold text-[var(--theme-ink)] transition-colors group-hover:text-[var(--theme-ink)]">
+
+        <div className="p-3">
+          <h3 className="line-clamp-2 font-serif text-sm font-bold leading-5 text-[var(--theme-ink)]">
             {video.title}
           </h3>
-          <p className="mt-3 line-clamp-2 text-sm leading-7 text-[var(--theme-muted)]">
+
+          <p className="mt-1 line-clamp-2 text-[11px] leading-4 text-[var(--theme-muted)]">
             {video.description}
           </p>
+
           {video.sourcePublisher && (
-            <p className="mt-2 text-[11px] font-extrabold uppercase tracking-wide text-[var(--theme-ink)]">
+            <p className="mt-1 truncate text-[9px] font-bold uppercase text-[var(--theme-ink)]">
               Publisher: {video.sourcePublisher}
             </p>
           )}
-          <span className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--theme-ink)]">
-            {id ? "View Video" : "Open Topic Guide"} <ArrowRight size={15} />
-          </span>
+
+          <div className="mt-2">
+            {id ? (
+              <VideoCardPlayer
+                youtubeUrl={video.youtubeUrl}
+                title={video.title}
+                compact
+              />
+            ) : (
+              <Link
+                href={`/videos/${slug}`}
+                className="inline-flex items-center gap-1 text-[10px] font-bold uppercase text-[var(--theme-ink)]"
+              >
+                Open Topic Guide <ArrowRight size={12} />
+              </Link>
+            )}
+          </div>
         </div>
-      </Link>
+      </article>
     </MotionSurface>
   );
 }
+
 export function PageBanner({ eyebrow, title, description, image }) {
   const bannerSrc = asset(image || topicImage(title, eyebrow));
   return (
@@ -277,4 +315,12 @@ export function BreadcrumbSide({ services }) {
       </div>
     </aside>
   );
+}
+
+function getYouTubeThumbnail(url) {
+  const id = ytId(url);
+
+  if (!id) return "";
+
+  return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
 }
