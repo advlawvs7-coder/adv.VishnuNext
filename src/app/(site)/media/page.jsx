@@ -16,6 +16,9 @@ export default async function Media() {
         eyebrow="Professional Publications"
         title="Media & Publications"
         description="A reserved area for verified editorial contributions and appearances."
+        image={
+          "https://res.cloudinary.com/damwcqwvs/image/upload/v1793347032/7.jpg"
+        }
       />
       <div className="section-pad container-site">
         <div className="prose-content mx-auto max-w-3xl">

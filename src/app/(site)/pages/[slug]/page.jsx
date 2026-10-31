@@ -17,7 +17,14 @@ export default async function GenericPage({ params }) {
   if (!p) notFound();
   return (
     <>
-      <PageBanner title={p.title} description={p.excerpt} image={p.heroImage} />
+      <PageBanner
+        title={p.title}
+        description={p.excerpt}
+        // image={p.heroImage}
+        image={
+          "https://res.cloudinary.com/damwcqwvs/image/upload/v1793347034/10.jpg"
+        }
+      />
       <article className="section-pad container-site prose-content max-w-4xl">
         <RichContent content={p.content || ""} />
       </article>

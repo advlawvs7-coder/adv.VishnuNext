@@ -45,6 +45,7 @@ export default function Judgments() {
         eyebrow="COURTS & JUDICIAL PRINCIPLES"
         title="Judgments & Legal Principles"
         description="A topic-based knowledge resource, not a claim of cases argued or won by this office."
+        image={''}
       />
       <section className="section-pad container-site">
         <SectionHeading

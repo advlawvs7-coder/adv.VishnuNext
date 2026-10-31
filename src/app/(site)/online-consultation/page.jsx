@@ -11,6 +11,9 @@ export default function OnlineConsultation() {
         eyebrow="Consultation"
         title="Online Consultation"
         description="Send a preliminary enquiry from India or overseas about an India-related legal matter."
+        image={
+          "https://res.cloudinary.com/damwcqwvs/image/upload/v1793347032/6.jpg"
+        }
       />
       <section className="section-pad container-site grid gap-12 lg:grid-cols-[.85fr_1.15fr]">
         <div>

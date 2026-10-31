@@ -66,7 +66,7 @@ export default async function Contact() {
         description={
           s.consultationText || "Make an informed start to your legal matter."
         }
-        image="https://res.cloudinary.com/damwcqwvs/image/upload/v1793104961/advocate-vishnu-sharma/w8mccikbpdkdlhnejnqz.png"
+        image="https://res.cloudinary.com/damwcqwvs/image/upload/v1793347031/3.jpg"
       />
       <section className="bg-[var(--theme-tint)] py-14 lg:py-20">
         <div className="container-site grid gap-8 lg:grid-cols-[.95fr_1.05fr] lg:gap-14">

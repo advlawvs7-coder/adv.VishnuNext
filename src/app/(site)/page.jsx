@@ -34,6 +34,8 @@ import {
 import { getHomepage, getSettings } from "@/lib/content";
 import * as demo from "@/dummy-data/index";
 import { asset } from "@/lib/utils";
+import TestimonialSlider from "@/components/site/TestimonialSlider";
+import { testimonials } from "@/lib/seed-data.mjs";
 const journeys = [
   {
     name: "Matrimonial & Child Custody",
@@ -665,6 +667,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+      <TestimonialSlider
+        items={testimonials}
+      />
     </>
   );
 }

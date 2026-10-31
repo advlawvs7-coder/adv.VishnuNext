@@ -13,6 +13,9 @@ export default async function Directions() {
         eyebrow="Visit Us"
         title="Directions to Office"
         description="Plan your visit only after the appointment has been confirmed."
+        image={
+          "https://res.cloudinary.com/damwcqwvs/image/upload/v1793347034/11.jpg"
+        }
       />
       <section className="section-pad container-site">
         <div className="mx-auto max-w-4xl border border-[var(--theme-border)] bg-sand p-9 md:p-14">

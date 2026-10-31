@@ -17,6 +17,9 @@ export default async function Profile() {
         eyebrow="About the Advocate"
         title="Advocate Dr. Vishnu Sharma"
         description="Legal practice, client communication and responsible representation in Delhi."
+        image={
+          "https://res.cloudinary.com/damwcqwvs/image/upload/v1793347031/1.jpg"
+        }
       />
       <div className="container-site section-pad grid gap-14 lg:grid-cols-[380px_1fr]">
         <div>
@@ -24,7 +27,6 @@ export default async function Profile() {
             <img
               className="aspect-[4/4] w-full object-contain"
               src={
-              
                 "https://res.cloudinary.com/damwcqwvs/image/upload/v1792828170/advocate-vishnu-sharma/ofzrsprdafwhwdzznvzd.jpg"
               }
               alt="Professional portrait placeholder; replace with a verified image"

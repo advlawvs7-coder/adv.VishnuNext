@@ -80,14 +80,15 @@ export function ServiceCard({ service }) {
         href={`/practice-areas/${service.slug}`}
         className="spectrum-card group flex min-h-[335px] flex-col p-7"
       >
-        <div className="absolute right-0 top-0 h-28 w-54 overflow-hidden rounded-bl-[60px]  transition group-hover:scale-110 group-hover:opacity-[.50]">
+        <div className="absolute right-0 top-0 h-28 w-[216px] overflow-hidden rounded-bl-[60px] transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50">
           <img
             src={service.image || topicImage(service.title, service.category)}
             alt=""
             loading="lazy"
-            className="h-full w-full object-cover"
+            className="block h-full w-full object-fit"
           />
         </div>
+
         <div className="relative mb-6 flex items-start justify-between">
           <span className="accent-icon flex h-14 w-14 items-center justify-center rounded-2xl">
             <Icon size={27} strokeWidth={1.65} />

@@ -59,6 +59,9 @@ export default function Resources() {
         eyebrow="RESOURCE LIBRARY"
         title="Legal Resources & Practical Guides"
         description="Original introductory material to help visitors prepare for a legal consultation."
+        image={
+          "https://res.cloudinary.com/damwcqwvs/image/upload/v1793347033/8.jpg"
+        }
       />
       <section className="section-pad container-site">
         <SectionHeading
