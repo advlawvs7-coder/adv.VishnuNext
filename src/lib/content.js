@@ -149,7 +149,7 @@ export async function getHomepage() {
       data(Video, { published: true }, { sort: { order: 1 }, limit: 6 }),
       data(FAQ, { published: true }, { sort: { order: 1 }, limit: 8 }),
       data(Team, { published: true }, { sort: { order: 1 }, limit: 4 }),
-      data(Testimonial, { published: true }, { sort: { order: 1 }, limit: 3 }),
+      data(Testimonial, { published: true }, { sort: { order: 1 }, limit: 9 }),
     ]);
   return {
     slides,

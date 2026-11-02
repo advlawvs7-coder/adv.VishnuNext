@@ -108,7 +108,13 @@ export default function SiteFooter({ settings, navigation = [] }) {
       <div className="v9-footer-rule" aria-hidden="true" />
       <div className="container-site grid gap-10 py-16 lg:grid-cols-[1.35fr_1fr_1fr_1fr_1.1fr]">
         <div>
-          <Link href="/" className="mb-7 inline-flex items-center" aria-label="Advocate Dr. Vishnu Sharma home"><BrandMark /></Link>
+          <Link
+            href="/"
+            className="mb-7 inline-flex items-center"
+            aria-label="Advocate Dr. Vishnu Sharma home"
+          >
+            <BrandMark color="#3a79f7" />
+          </Link>
           <p className="max-w-sm text-[13px] leading-8 text-slate-300">
             {settings.footerBlurb ||
               "Original legal education and consultation information for matrimonial, property, criminal, civil and NRI-related matters in India."}
@@ -134,9 +140,9 @@ export default function SiteFooter({ settings, navigation = [] }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={name}
-                  className="text-[var(--theme-accent)] hover:text-white"
+                  className="transition-colors hover:opacity-70"
                 >
-                  <Icon size={20} />
+                  <Icon size={20} color="#3a79f7" strokeWidth={2} />
                 </a>
               ))}
           </div>
@@ -215,10 +221,7 @@ export default function SiteFooter({ settings, navigation = [] }) {
       </div>
       <div className="border-t border-white/10">
         <div className="container-site flex flex-wrap items-center justify-between gap-5 py-6 text-[11px] text-slate-400">
-          <span>
-            © {new Date().getFullYear()} •
-            advocatevishnusharma.com
-          </span>
+          <span>© {new Date().getFullYear()} • advocatevishnusharma.com</span>
           <div className="flex flex-wrap gap-5">
             {privacyLinks.map(([title, href]) => (
               <Link key={href} href={href} className="hover:text-white">

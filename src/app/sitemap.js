@@ -11,7 +11,7 @@ export default async function sitemap() {
   const root = (
     s.siteUrl ||
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://advocatevishnusharma.com"
+    "https://advocatevishnu.com"
   ).replace(/\/$/, "");
   const routes = [
     "",

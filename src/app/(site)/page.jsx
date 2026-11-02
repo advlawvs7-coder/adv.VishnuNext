@@ -35,7 +35,7 @@ import { getHomepage, getSettings } from "@/lib/content";
 import * as demo from "@/dummy-data/index";
 import { asset } from "@/lib/utils";
 import TestimonialSlider from "@/components/site/TestimonialSlider";
-import { testimonials } from "@/lib/seed-data.mjs";
+
 const journeys = [
   {
     name: "Matrimonial & Child Custody",
@@ -75,7 +75,9 @@ const journeys = [
     detail: "Wills, estate documentation and lawful asset succession.",
   },
 ];
+
 const processIcons = [MessageCircle, ClipboardCheck, ShieldCheck];
+
 const forumLinks = [
   [
     "Delhi High Court",
@@ -116,6 +118,7 @@ const toBullets = (v) =>
       return [a, b.join("|")];
     })
     .filter((x) => x[0]);
+
 export async function generateMetadata() {
   const s = await getSettings();
   return {
@@ -124,6 +127,7 @@ export async function generateMetadata() {
     alternates: { canonical: s.siteUrl || "https://advocatevishnusharma.com" },
   };
 }
+
 export default async function HomePage() {
   const [settings, home] = await Promise.all([getSettings(), getHomepage()]);
   const slides = home.slides;
@@ -133,6 +137,7 @@ export default async function HomePage() {
   const faqs = home.faqs;
   const team = home.team;
   const sections = home.sections;
+  const testimonials = home.testimonials;
   const get = (key) =>
     sections.find((s) => s.sectionKey === key) ||
     demo.sections.find((s) => s.sectionKey === key) ||
@@ -169,7 +174,7 @@ export default async function HomePage() {
             <span className="font-serif text-4xl text-[var(--theme-accent-light)]">
               15+
             </span>
-            <span className="ml-3 inline-block text-xs font-semibold uppercase tracking-widest">
+            <span className="ml-3 inline-block text-xs font-semibold uppercase tracking-widest text-[var(--theme-white)]">
               Years of
               <br />
               Legal Practice
@@ -296,7 +301,7 @@ export default async function HomePage() {
                     src={asset(x.image)}
                     alt={`Illustration for ${x.title}`}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-fit transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
@@ -416,11 +421,11 @@ export default async function HomePage() {
               className="h-[380px] w-full object-cover shadow-editorial"
               alt="International document review"
             />
-            <div className="absolute -bottom-6 left-6 right-6 bg-ink px-6 py-5 text-white">
-              <p className="font-serif text-xl">
+            <div className="absolute -bottom-6 left-8 right-6 bg-ink px-6 py-5 text-white text-[var(--theme-accent-light)]">
+              <p className="font-serif text-xl text-[var(--theme-white)]">
                 India-related enquiries worldwide
               </p>
-              <p className="mt-1 text-xs text-slate-300">
+              <p className="m-1 text-xs text-[var(--theme-accent-light)]">
                 These are visitor locations, not claims of overseas offices.
               </p>
             </div>
@@ -566,7 +571,7 @@ export default async function HomePage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="container-site grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {videos.slice(0, 4).map((v) => (
             <VideoCard key={v.title} video={v} />
           ))}
@@ -667,9 +672,7 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-      <TestimonialSlider
-        items={testimonials}
-      />
+      <TestimonialSlider items={testimonials} />
     </>
   );
 }

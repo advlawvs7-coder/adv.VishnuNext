@@ -122,19 +122,19 @@ export function PostCard({ post }) {
         href={`/blog/${post.slug}`}
         className="editorial-card group block border border-[var(--theme-border)] bg-white shadow-sm"
       >
-        <div className="relative h-56 overflow-hidden bg-[var(--theme-tint)]">
+        <div className="relative h-56 overflow-hidden bg-[var(--theme-tint)] p-3">
           <img
-            src={asset(post.coverImage)}
+            src={asset(post?.coverImage)}
             alt={`Illustrative image for ${post.title}`}
             loading="lazy"
-            className="h-full w-full object-cover"
+            className="h-full w-full rounded-xl object-cover"
           />
           <div className="absolute bottom-4 left-4 rounded-lg border border-[var(--theme-border)] bg-white px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[var(--theme-ink)]">
             {post.category || "Legal Insights"}
           </div>
         </div>
         <div className="p-7">
-          <p className="mb-4 flex items-center gap-2 text-[11px] font-semibold text-[var(--theme-ink)]">
+          <p className="mb-4 flex items-center gap-2 text-[11px] font-semibold text-[var(--theme-primary-light)]">
             <CalendarDays size={13} />
             {!isNaN(new Date(post.publishedAt || post.createdAt).getTime())
               ? new Date(post.publishedAt || post.createdAt).toLocaleDateString(
@@ -145,12 +145,12 @@ export function PostCard({ post }) {
             <span className="mx-2 text-slate-300">•</span> 5 min read
           </p>
           <h3 className="min-h-[59px] font-serif text-[22px] font-bold leading-[1.36] text-[var(--theme-ink)] transition-colors group-hover:text-[var(--theme-ink)]">
-            {post.title}
+            {post?.title.split(0, 50)}
           </h3>
-          <p className="mt-4 line-clamp-3 text-[13px] leading-7 text-[var(--theme-muted)]">
+          {/* <p className="mt-4 line-clamp-3 text-[13px] leading-7 text-[var(--theme-muted)]">
             {post.excerpt}
-          </p>
-          <span className="mt-6 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-[var(--theme-ink)]">
+          </p> */}
+          <span className="mt-6 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-[var(--theme-primary-light)]">
             Read Full Article{" "}
             <ArrowUpRight
               size={17}
@@ -252,25 +252,42 @@ export function VideoCard({ video }) {
 export function PageBanner({ eyebrow, title, description, image }) {
   const bannerSrc = asset(image || topicImage(title, eyebrow));
   return (
-    <section className="v8-page-banner v9-page-banner" aria-label={`${title} page introduction`}>
+    <section
+      className="v8-page-banner v9-page-banner"
+      aria-label={`${title} page introduction`}
+    >
       <img
         src={bannerSrc}
         alt=""
         aria-hidden="true"
-        className="v9-banner-photo"
+        className="v9-banner-photo rounded-2xl p-2 m-2"
         loading="eager"
         fetchPriority="high"
       />
       <div className="container-site v9-banner-shell">
         <div className="v9-page-content v9-rise-enter">
-          <p className="v9-banner-kicker">{eyebrow || "ADVOCATE DR. VISHNU SHARMA"}</p>
-          <h1 className={`v9-banner-title ${String(title || "").length > 58 ? "v9-banner-title-long" : ""}`}>{title}</h1>
-          {description && <p className="v9-banner-description">{description}</p>}
-          <nav aria-label="Breadcrumb" className="v9-banner-breadcrumb">
-            <Link href="/" className="v9-text-link">Home</Link>
-            <ChevronRight size={14} aria-hidden="true" />
-            <span className="min-w-0 truncate" title={title}>{title}</span>
-          </nav>
+          <p className="v9-banner-kicker">{eyebrow || ""}</p>
+          <h1
+            className={`v9-banner-title ${String(title || "").length > 58 ? "v9-banner-title-long" : ""}`}
+          >
+            {title}
+          </h1>
+          {description && (
+            <p className="v9-banner-description">{description}</p>
+          )}
+          {title ? (
+            <nav aria-label="Breadcrumb" className="v9-banner-breadcrumb">
+              <Link href="/" className="v9-text-link">
+                Home
+              </Link>
+              <ChevronRight size={14} aria-hidden="true" />
+              <span className="min-w-0 truncate" title={title}>
+                {title}
+              </span>
+            </nav>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <span className="v9-banner-bottom-rule" aria-hidden="true" />

@@ -1,8 +1,15 @@
-/** Original, scalable VS legal monogram. Inherits the active theme accent. */
-export default function BrandMark({ compact = false, inverse = false, className = "" }) {
+export default function BrandMark({
+  compact = false,
+  inverse = false,
+  className = "",
+  color,
+}) {
   return (
     <span
-      className={`v9-brand ${compact ? "v9-brand-compact" : ""} ${inverse ? "v9-brand-inverse" : ""} ${className}`}
+      style={color ? { color } : undefined}
+      className={`v9-brand ${compact ? "v9-brand-compact" : ""} ${
+        inverse ? "v9-brand-inverse" : ""
+      } ${className}`}
     >
       <svg
         className="v9-brand-symbol"
@@ -11,7 +18,6 @@ export default function BrandMark({ compact = false, inverse = false, className 
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* Premium Rounded Border */}
         <rect
           x="2"
           y="2"
@@ -22,7 +28,6 @@ export default function BrandMark({ compact = false, inverse = false, className 
           strokeWidth="1.5"
         />
 
-        {/* Central Justice Pillar */}
         <path
           d="M36 14V54M23 22H49M31 56H41M26 61H46"
           stroke="currentColor"
@@ -30,13 +35,9 @@ export default function BrandMark({ compact = false, inverse = false, className 
           strokeLinecap="round"
         />
 
-        {/* Top Crown */}
         <path d="M36 13L32 19H40L36 13Z" fill="currentColor" />
-
-        {/* Center Detail */}
         <circle cx="36" cy="23" r="3" fill="currentColor" />
 
-        {/* Balanced Scales */}
         <path
           d="M23 25L15 41H31L23 25ZM49 25L41 41H57L49 25Z"
           stroke="currentColor"
@@ -44,7 +45,6 @@ export default function BrandMark({ compact = false, inverse = false, className 
           strokeLinejoin="round"
         />
 
-        {/* Scale Bowls */}
         <path
           d="M15 43Q23 51 31 43M41 43Q49 51 57 43"
           stroke="currentColor"
@@ -52,10 +52,8 @@ export default function BrandMark({ compact = false, inverse = false, className 
           strokeLinecap="round"
         />
 
-        {/* Suspension Details */}
         <path d="M23 25V22M49 25V22" stroke="currentColor" strokeWidth="1.7" />
 
-        {/* Pillar Base Detail */}
         <path
           d="M32 52H40"
           stroke="currentColor"

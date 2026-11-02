@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
         title: p.seoTitle || p.title,
         description: p.seoDescription || p.excerpt,
         alternates: {
-          canonical: `https://advocatevishnusharma.com/blog/${slug}`,
+          canonical: `https://advocatevishnu.com/blog/${slug}`,
         },
       }
     : { title: "Article Not Found" };
@@ -47,19 +47,27 @@ export default async function Article({ params }) {
   );
   return (
     <>
-      <PageBanner
+      {/* <PageBanner
         eyebrow={post.category || "LEGAL INSIGHTS"}
         title={post.title}
         description={post.excerpt}
         image={post.coverImage}
-      />
+      /> */}
+
       <section className="bg-[var(--theme-tint)] py-12 lg:py-20">
         <div className="container-site grid items-start gap-9 lg:grid-cols-[minmax(0,1fr)_365px] xl:gap-14">
           <article className="min-w-0 overflow-hidden rounded-[24px] border border-[var(--theme-border)] bg-white shadow-[0_25px_75px_rgba(12,36,49,.08)]">
+            <div className="overflow-hidden">
+              <img
+                className="max-h-[440px] w-full object-cover"
+                src={asset(post.coverImage)}
+                alt={`Illustrative cover for ${post.title}`}
+              />
+            </div>
             <div className="border-b border-[var(--theme-border)] px-6 py-6 md:px-10">
               <div className="flex flex-wrap items-center gap-5 text-xs font-semibold text-[var(--theme-primary)]">
                 <span className="flex items-center gap-2">
-                  <BookOpen size={16} /> {post.category || "Legal Education"}
+                  <BookOpen size={16} /> {post?.category || "Legal Education"}
                 </span>
                 <span className="flex items-center gap-2">
                   <CalendarDays size={16} />{" "}
@@ -76,14 +84,10 @@ export default async function Article({ params }) {
                 </span>
               </div>
             </div>
-            <div className="overflow-hidden">
-              <img
-                className="max-h-[440px] w-full object-cover"
-                src={asset(post.coverImage)}
-                alt={`Illustrative cover for ${post.title}`}
-              />
-            </div>
             <div className="px-6 pb-12 pt-9 md:px-11 md:pb-16">
+              <h1 className="relative mb-5 font-serif text-3xl font-bold leading-tight">
+                {post?.title}
+              </h1>
               <div className="mb-9 rounded-2xl border-l-4 border-[var(--theme-primary)] bg-[var(--theme-tint)] p-6 text-sm leading-8 text-[var(--theme-ink)]">
                 {post.excerpt}
               </div>
@@ -115,9 +119,7 @@ export default async function Article({ params }) {
                 <span className="relative inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-2 text-[10px] font-extrabold uppercase tracking-widest">
                   <CalendarDays size={15} /> Request Appointment
                 </span>
-                <h2 className="relative mt-5 font-serif text-3xl font-bold leading-tight">
-                  Discuss your legal matter
-                </h2>
+                <h2>Discuss your legal matter</h2>
                 <p className="relative mt-4 text-sm leading-7 text-slate-100">
                   Send a brief enquiry for a consultation with Advocate Dr.
                   Vishnu Sharma.

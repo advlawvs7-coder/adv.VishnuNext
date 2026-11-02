@@ -14,7 +14,7 @@ export default async function PublicLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LegalService",
     name: settings.brandName || "Dr. Advocate Vishnu Sharma",
-    url: settings.siteUrl || "https://advocatevishnusharma.com",
+    url: settings.siteUrl || "https://advocatevishnu.com",
     telephone: settings.phone || undefined,
     email: settings.email || undefined,
     address: {
